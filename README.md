@@ -5,7 +5,8 @@ Density's front end resources, used as a submodule for any web project.
 
 Density UI is meant to be used as a git submodule in a parent project. It acts as a library and doesn't have its own build process, but rather relies on the build process of the parent project.
 
-To use density-ui:
+To use Density UI:
+
 1.  In the parent project, clone density-ui into its desired location (recommended is root of app)
 
         $ git clone git@github.com:DensityCo/density-ui.git
