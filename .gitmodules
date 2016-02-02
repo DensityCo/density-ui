@@ -1,3 +1,9 @@
-[submodule "dependencies/bootstrap-sass"]
-	path = dependencies/bootstrap-sass
-	url = git@github.com:twbs/bootstrap-sass.git
+[submodule "lib/vendor/bourbon"]
+	path = lib/vendor/bourbon
+	url = git@github.com:thoughtbot/bourbon.git
+[submodule "lib/vendor/scss-flex-grid"]
+	path = lib/vendor/scss-flex-grid
+	url = git@github.com:matthewsimo/scss-flex-grid.git
+[submodule "lib/vendor/meyer-reset"]
+	path = lib/vendor/meyer-reset
+	url = git@github.com:adamstac/meyer-reset.git
