@@ -21,9 +21,7 @@ To use Density UI:
 
 ## Parent Workflow
 
-The parent project housing Density UI will be accomplishing the frontend workflow; Density UI is considered a library.
-
-The housing workflow requires at minimum:
+The parent project housing Density UI will be accomplishing the frontend workflow. The parent workflow requires, at minimum:
 
 *   SCSS compilation
 *   [Autoprefixer](https://github.com/postcss/autoprefixer)
