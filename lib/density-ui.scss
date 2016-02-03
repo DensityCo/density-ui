@@ -1,6 +1,10 @@
-// Density UI base
-@import "base/variables.scss";
-@import "base/section.scss";
+// Vendor
+@import "vendor/bourbon/app/stylesheets/bourbon";
+@import "vendor/scss-flex-grid/flex-grid";
+@import "vendor/meyer-reset/stylesheets/meyer-reset";
+
+// Variables
+@import "utils/variables";
 
 // Utils
 @import "utils/mixins";
@@ -20,4 +24,4 @@
 // Layout
 
 // Themes
-@import "themes/ui-guide";
+@import "themes/density-ui";
