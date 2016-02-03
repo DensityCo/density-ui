@@ -1,8 +1,0 @@
-//
-// Content Inner
-// -----------------------------------------
-.content-inner {
-  @include clearfix;
-  width: 100%;
-  height: calc(100% - #{$app-bar-height});
-}
