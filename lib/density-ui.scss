@@ -1,15 +1,13 @@
 // Vendor
 @import "vendor/bourbon/app/assets/stylesheets/bourbon";
-@import "vendor/scss-flex-grid/flex-grid";
 @import "vendor/meyer-reset/stylesheets/meyer-reset";
 
-// Variables
-@import "utils/variables";
-
 // Utils
+@import "utils/variables";
 @import "utils/mixins";
 
 // Base
+@import "base/flex-grid";
 @import "base/typography";
 @import "base/buttons";
 @import "base/forms";
