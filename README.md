@@ -19,6 +19,15 @@ To use Density UI:
 
         $ cd /path/to/density-ui && git fetch && git checkout [some-branch]
 
+## Parent Workflow
+
+The parent project housing Density UI will be accomplishing the frontend workflow; Density UI is considered a library.
+
+The housing workflow requires at minimum:
+
+*   SCSS compilation
+*   [Autoprefixer](https://github.com/postcss/autoprefixer)
+
 ## Contributing
 
 Changes to density-ui in the early stages will most likely break other projects that depend on it. Therefore, keep the `development` branch clean until each project is ready to implement the changes on a `feature` branch.
