@@ -1,0 +1,31 @@
+//
+// Content Toolbar
+// -----------------------------------------
+.content-toolbar {
+  @extend .toolbar;
+  @include clearfix;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #fff;
+  border-bottom: 1px solid $tan-light;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+
+.content-toolbar-nav {
+  @extend %toolbar-large;
+
+  .toolbar-title {
+    top: 15px;
+    transform: none;
+  }
+
+  .nav {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.content-toolbar-subtitle {
+  @extend %toolbar-large;
+}

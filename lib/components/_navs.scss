@@ -1,0 +1,56 @@
+//
+// Navs
+// --------------------------------------------------
+
+
+// Tabs
+// -------------------------
+
+// Give the tabs something to sit on
+.nav-tabs {
+  border-bottom: none;
+
+  > li {
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    > a {
+      margin-right: 2px;
+      line-height: $line-height-base;
+      border: none;
+      border-bottom: 2px solid $nav-tabs-border-color;
+      border-radius: 0;
+      color: $gray-light;
+      transition: border-color 0.1s ease-in;
+
+      &:hover,
+      &:focus {
+        background-color: $nav-tabs-active-link-hover-bg;
+        border-color: $nav-tabs-link-hover-border-color;
+        transition: border-color 0.2s ease-in;
+        outline: none;
+      }
+    }
+
+    // Active state, and it's :hover to override normal :hover
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $nav-tabs-active-link-hover-color;
+        background-color: $nav-tabs-active-link-hover-bg;
+        border: none;
+        border-bottom: 2px solid $nav-tabs-active-link-hover-color;
+      }
+    }
+  }
+  // pulling this in mainly for less shorthand
+  &.nav-justified {
+    @extend .nav-justified;
+    @extend .nav-tabs-justified;
+  }
+}

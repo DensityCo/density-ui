@@ -1,0 +1,59 @@
+//
+// Forms
+// -----------------------------------------
+
+
+
+// Checkboxes
+// ---------------------
+input[type=checkbox] {
+  display: none;
+  margin: 0;
+}
+
+input[type=checkbox] + label {
+  display:inline-block;
+  height: 22px;
+  width: 22px;
+  margin: 0;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  font-size: 22px;
+  line-height: 22px;
+  vertical-align: middle;
+  cursor: pointer;
+
+  &:before { content:"check_box_outline_blank"; }
+}
+
+input[type=checkbox]:checked + label {
+  display:inline-block;
+  height: 22px;
+  width: 22px;
+  margin: 0;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  font-size: 22px;
+  line-height: 22px;
+  vertical-align: middle;
+  cursor: pointer;
+  color: $brand-primary;
+
+  &:before { content:"check_box_outline"; }
+}

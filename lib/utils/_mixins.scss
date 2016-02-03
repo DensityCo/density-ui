@@ -1,0 +1,51 @@
+@mixin button-reset {
+  display: inline-block;
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button; /* for input */
+  -webkit-user-select: none; /* for button */
+     -moz-user-select: none;
+      -ms-user-select: none;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &:focus { outline: none; }
+
+  &::-moz-focus-inner {
+      border: 0;
+      padding: 0;
+  }
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+@mixin button-style($color) {
+  background-color: $color;
+  color: #fff;
+  border-color: darken($color, 5%);
+
+  &.button-inverse {
+    background-color: transparent;
+    color: $color;
+  }
+
+  &:hover {
+    background-color: darken($color, 5%);
+    color: #fff;
+  }
+}

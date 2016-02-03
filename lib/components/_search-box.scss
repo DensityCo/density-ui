@@ -1,0 +1,123 @@
+//
+// Search Box
+// -----------------------------------------
+
+.search-box-container {
+  display: inline-block;
+  position: relative;
+  height: $search-box-height;
+  width: 180px;
+
+  i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: $search-box-height;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 2;
+    background: #fff;
+    border-radius: 0 4px 4px 0;
+    color: #979898;
+    line-height: $search-box-height;
+  }
+}
+
+.search-box {
+  box-sizing: border-box;
+  height: $search-box-height;
+  width: 100%;
+  padding-top: $search-box-padding-vert / 2;
+  padding-bottom: $search-box-padding-vert / 2;
+  padding-left: 15px;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-size: 16px;
+  @include transition(border-radius 200ms ease);
+
+  &:focus {
+    border-color: transparent;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    outline: none;
+    border-radius: 4px 4px 0 0;
+    @include transition(border-radius 200ms ease);
+  }
+}
+
+.search-box-typeahead {
+  position: absolute;
+  top: $search-box-height;
+  left: 0;
+  right: 0;
+  height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  @include transition(
+    height 200ms cubic-bezier(0, 0, 0.265, 1.55),
+    border-top 100ms ease-in-out
+  );
+
+  &.open {
+    border-top: 1px solid $gray-lighter;
+    height: 300px;
+    @include transition(
+      height 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55),
+      border-top 300ms ease-in-out
+    );
+  }
+}
+
+.search-box-typeahead-body {
+  box-sizing: border-box;
+  height: 244px;
+  width: 100%;
+  overflow-y: scroll;
+  padding: 5px 15px 10px;
+}
+
+.search-box-typeahead-heading {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: $gray-light;
+}
+
+.search-box-typeahead-list {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover { background-color: $gray-lighter; }
+  }
+}
+
+.search-box-typeahead-footer {
+  height: 56px;
+  width: 100%;
+  padding: 7px 15px;
+  border-top: 1px solid $gray-lighter;
+  text-align: center;
+}
+
+.search-box-typeahead-footer-actions {
+  display: inline-block;
+  float: none;
+
+  .button {
+    margin-top: 1px;
+    font-size: 12px;
+  }
+}

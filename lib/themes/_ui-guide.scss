@@ -1,0 +1,62 @@
+//
+// UI Guide
+// -----------------------------------------
+
+// UI Example Images
+// ----------------
+.ui-guide-example-image {
+  margin-bottom: 60px;
+}
+
+
+
+// UI Code Examples
+// ----------------
+.ui-guide-code-panel {
+  @extend .panel;
+  @extend .panel-default;
+
+  .panel-body {
+    max-height: 350px;
+    overflow: hidden;
+    @include transition(max-height 100ms ease-in-out);
+  }
+
+  &.open {
+    .panel-body {
+      max-height: 999px;
+      @include transition(max-height 300ms ease-in-out);
+    }
+  }
+
+  .panel-footer { text-align: center; }
+  .panel-footer-actions {
+    display: inline-block;
+    float: none;
+
+    .button {
+      margin-top: 1px;
+      font-size: 12px;
+    }
+  }
+}
+
+pre code {
+  font-size: 12px;
+}
+
+// Prism Overrdies
+code[class*="language-"],
+pre[class*="language-"] {
+  text-shadow: none;
+}
+
+pre[class*="language-"] {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: $tan-lighter;
+  border: none;
+  line-height: 1.2;
+}

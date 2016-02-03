@@ -1,0 +1,46 @@
+//
+// Toolbar
+// -----------------------------------------
+.toolbar {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 56px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.toolbar-breadcrumb {
+  @extend .breadcrumb;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: transparent;
+  border-radius: 0;
+
+  > li {
+    padding: 0;
+    font-size: 22px;
+    color: $tan-dark;
+
+    + li:before {
+      color: $tan-dark;
+    }
+  }
+
+  > .active { color: $text-color; }
+}
+
+.toolbar-title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+}
+
+.toolbar-subtitle {
+  padding-top: 5px;
+  font-size: 16px;
+  color: $tan-dark;
+}
+
+%toolbar-large { min-height: $toolbar-height-large; }
