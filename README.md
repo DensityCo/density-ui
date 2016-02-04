@@ -37,5 +37,8 @@ When a feature is ready, create a pull request to merge into `development`. Info
 These are currently git submodules within the `lib/vendor/` directory. When we make the switch to an npm private repo, these will become npm dependencies.
 
 *   [Bourbon](https://github.com/thoughtbot/bourbon)
-*   [SCSS Flex Grid](https://github.com/matthewsimo/scss-flex-grid)
 *   [Meyer Reset](https://github.com/adamstac/meyer-reset)
+
+##### Note:
+
+Our [flex grid](lib/base/_flex-grid.scss) originates from [SCSS Flex Grid](https://github.com/matthewsimo/scss-flex-grid), but is included in the library and not as a vendor dependency.
