@@ -1,4 +1,4 @@
-# density-ui
+# Density UI
 Density's front end resources, used as a submodule for any web project.
 
 ## How to use
