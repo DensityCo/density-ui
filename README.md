@@ -26,6 +26,8 @@ The parent project housing Density UI will be accomplishing the frontend workflo
 *   SCSS compilation
 *   [Autoprefixer](https://github.com/postcss/autoprefixer)
 
+[Density Style Guide](https://github.com/DensityCo/density-style-guide) is  an example as a parent project.
+
 ## Contributing
 
 Changes to density-ui in the early stages will most likely break other projects that depend on it. Therefore, keep the `development` branch clean until each project is ready to implement the changes on a `feature` branch.
