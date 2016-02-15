@@ -1,0 +1,173 @@
+//
+// App Bar
+// -----------------------------------------
+
+.app-bar {
+  box-sizing: border-box;
+  height: $app-bar-height;
+  background-color: $gray-darker;
+  border-bottom: 1px solid $gray-lighter;
+}
+
+.app-bar-side-nav-btn {
+  @include button-reset;
+  position: relative;
+  z-index: $zindex-side-nav + 20;
+  float: left;
+  height: 40px;
+  width: 40px;
+  margin-top: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  line-height: 44px;
+  color: rgba(#fff, 0.7);
+  font-size: 22px;
+  font-family: $font-family-base;
+  transition: background-color 0.1s ease-in;
+  overflow: hidden;
+  @include transition(all 100ms ease-in);
+
+  i { line-height: inherit; }
+
+  &:hover {
+    color: rgba(#fff, 0.9);
+    background-color: rgba(#000, 0.3);
+    @include transition(all 200ms ease-in);
+  }
+}
+
+.app-bar-brand {
+  position: relative;
+  z-index: $zindex-side-nav + 20;
+  float: left;
+  height: $app-bar-height;
+  font-size: 18px;
+  color: rgba(#fff, 0.7);
+
+  img {
+    @include vertical-align-y();
+    top: 52%;
+    height: 22px;
+  }
+}
+
+.app-bar-title {
+  position: relative;
+  z-index: $zindex-side-nav + 20;
+  float: left;
+  height: $app-bar-height;
+  font-size: 20px;
+  line-height: $app-bar-height;
+  color: rgba(#fff, 0.7);
+}
+
+.app-bar-subtitle {
+  position: relative;
+  z-index: $zindex-side-nav + 20;
+  float: left;
+  height: $app-bar-height;
+  padding-left: 10px;
+  font-size: 16px;
+  line-height: $app-bar-height;
+  color: rgba(#fff, 0.7);
+}
+
+
+// App Bar Search
+// ---------------------
+
+.app-bar {
+  .search-box-container {
+    position: absolute;
+    z-index: $zindex-navbar-fixed + 10;
+    left: 35%;
+    width: 30%;
+    top: ($app-bar-height - $search-box-height) / 2;
+  }
+}
+
+
+// App Bar Right Nav
+// ---------------------
+.app-bar-right-nav {
+  float: right;
+  padding-right: 10px;
+  text-align: right;
+
+  .popover {
+    width: 300px;
+    margin-top: -9px;
+  }
+
+  .popover-content {
+    max-height: 350px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    @include scroll-y();
+  }
+}
+
+.app-bar-app-action {
+  @include button-reset;
+  float: left;
+  height: $app-bar-height;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 16px;
+  color: rgba(#fff, 0.7);
+  @include transition(color 200ms ease-in-out);
+
+  &:hover { color: rgba(#fff, 0.9); }
+}
+
+.app-bar-app-action-icon {
+  position: relative;
+}
+
+.app-bar-app-action-badge {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: $brand-danger;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  color: #fff;
+  line-height: 15px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 100;
+}
+
+
+// App Bar User Info
+// ---------------------
+.app-bar-account-info {
+  @include button-reset;
+  height: $app-bar-height;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: $app-bar-height - 2;
+  color: rgba(#fff, 0.7);
+  font-size: $font-size-base;
+  font-family: $font-family-base;
+  @include transition(color 200ms ease-in-out);
+
+  &:hover { color: rgba(#fff, 0.9); }
+}
+
+.app-bar-account-avatar {
+  display: inline-block;
+  height: $app-bar-height;
+  margin-left: 5px;
+  line-height: $app-bar-height + 4;
+
+  i { line-height: inherit; }
+}
+
+.app-bar-account-name { vertical-align: top; }

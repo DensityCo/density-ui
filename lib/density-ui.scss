@@ -1,5 +1,5 @@
 // Vendor
-@import "vendor/bourbon/app/assets/stylesheets/bourbon";
+@import "vendor/bourbon/core/bourbon";
 @import "vendor/meyer-reset/stylesheets/meyer-reset";
 
 // Utils
@@ -20,6 +20,14 @@
 @import "components/panels";
 
 // Layout
+@import "layout/scaffolding";
+@import "layout/app-bar";
+@import "layout/content-inner";
+@import "layout/content-panel";
+@import "layout/content-sidebar";
+@import "layout/content-toolbar";
+@import "layout/side-nav";
+
 
 // Themes
 @import "themes/density-ui";

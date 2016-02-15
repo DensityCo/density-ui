@@ -1,36 +1,33 @@
 //
 // Colors
 // -------------------------
-$gray-darker:            lighten(#000, 13.5%) !default; // #222
-$gray-dark:              lighten(#000, 20%) !default;   // #333
-$gray:                   lighten(#000, 33.5%) !default; // #555
-$gray-light:             lighten(#000, 60%) !default;   // #999
-$gray-lighter:           lighten(#000, 93.5%) !default; // #eee
+$gray-darker:            #4A5159;
+$gray-dark:              #6F8093;
+$gray:                   #C1CAD5;
+$gray-light:             #E1E7ED;
+$gray-lighter:           #F2F5F8;
 
 $tan-darker:                 #484542;
 $tan-dark:                   #827F7B;
 $tan-light:                  #E5E3E1;
 $tan-lighter:                #F5F4F4;
 
-$iii-teal:                   #217386;
-$iii-teal-dark:              #172A2F;
-
 $facebook-blue:              #3b5998;
 $twitter-blue:               #4099ff;
 
 // Brand colors
 // -------------------------
-$brand-primary:         $iii-teal !default;
-$brand-success:         #5cb85c !default;
-$brand-warning:         #f0ad4e !default;
-$brand-danger:          #E97549 !default;
-$brand-info:            #5bc0de !default;
+$brand-primary:         #3CACF4 !default;
+$brand-success:         #14BB83 !default;
+$brand-warning:         #EBA916 !default;
+$brand-danger:          #FE6B6B !default;
+$brand-info:            $gray !default;
 
 // Scaffolding
 // -------------------------
 
 $body-bg:               #fff !default;
-$text-color:            $tan-darker !default;
+$text-color:            $gray-darker !default;
 
 // Links
 // -------------------------
@@ -41,7 +38,7 @@ $link-hover-color:      darken($link-color, 15%) !default;
 // Typography
 // -------------------------
 
-$font-family-sans-serif:  system !default;
+$font-family-sans-serif:  "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
@@ -50,7 +47,7 @@ $font-size-base:          16px !default;
 $font-size-large:         ceil($font-size-base * 1.25) !default; // ~18px
 $font-size-small:         ceil($font-size-base * 0.85) !default; // ~12px
 
-$font-size-h1:            floor($font-size-base * 2.6) !default; // ~36px
+$font-size-h1:            floor($font-size-base * 1.75) !default; // ~28px
 $font-size-h2:            floor($font-size-base * 1.5) !default; // ~24px
 $font-size-h3:            ceil($font-size-base * 1.25) !default; // ~20px
 $font-size-h4:            $font-size-base !default;

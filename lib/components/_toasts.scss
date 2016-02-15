@@ -1,0 +1,30 @@
+//
+// Toasts
+// -----------------------------------------
+
+.toast {
+  @include vertical-align-y(fixed);
+  @include vertical-align-x(fixed);
+  display: none;
+  padding: 15px;
+  margin-bottom: 22px;
+  background-color: $gray-darker;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  color: #fff;
+}
+
+.toast-success {
+  i {
+    vertical-align: top;
+    color: $brand-success;
+  }
+}
+
+.toast-danger {
+  i {
+    vertical-align: top;
+    color: $brand-danger;
+  }
+}

@@ -18,10 +18,7 @@
 
   &:hover {
     background-color: $tan-lighter;
-    @include transition(
-      background-color 0.2s ease-in-out,
-      color 0.2 ease-in-out
-    );
+    @include transition(all 2.0s ease-in-out);
   }
 }
 
