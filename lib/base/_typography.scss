@@ -54,8 +54,8 @@ h5, .h5 { font-size: $font-size-h5; }
 h6, .h6 { font-size: $font-size-h6; }
 
 h3 { color: $tan-dark; }
-
 h4 { font-weight: 500; }
+h6 { color: $gray-dark; }
 
 
 // Body text
@@ -69,13 +69,13 @@ p {
 
 .lead {
   margin-bottom: $line-height-computed;
-  font-size: floor($font-size-base * 1.15);
-  font-weight: 200;
+  font-size: floor($font-size-base * 1.125);
   line-height: 1.4;
+  color: $gray;
+}
 
-  @media (min-width: $screen-sm-min) {
-    font-size: ($font-size-base * 1.5);
-  }
+.secondary {
+  color: $gray;
 }
 
 

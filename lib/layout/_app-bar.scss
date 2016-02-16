@@ -175,6 +175,7 @@
   border-radius: 50%;
   line-height: 40px;
   overflow: hidden;
+  @include transition(border-color 200ms ease-in-out);
 
   i { line-height: inherit; }
 }
