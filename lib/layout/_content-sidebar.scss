@@ -4,11 +4,11 @@
 .content-sidebar {
   box-sizing: border-box;
   float: left;
-  width: 35%;
+  width: 30%;
   height: 100%;
   padding-top: 30px;
   padding-left: 50px;
-  padding-right: 50px;
+  padding-right: 30px;
   background-color: transparent;
   border-right: $gray-lighter;
   overflow-y: scroll;
@@ -37,6 +37,7 @@
 
     li > a {
       display: block;
+      position: relative;
       padding-top: 8px;
       padding-bottom: 8px;
       padding-left: 15px;
@@ -50,6 +51,15 @@
       }
       &.active {
         color: $gray-darker;
+
+        &:before {
+          @include vertical-align-y(absolute);
+          right: 50px;
+          display: block;
+          font-family: "density-icons";
+          content: "\e113";
+          color: $brand-primary;
+        }
       }
     }
   }
@@ -90,6 +100,6 @@
 
 @media (min-width: $screen-md) {
   .content-sidebar {
-    width: 25%;
+    width: 20%;
   }
 }

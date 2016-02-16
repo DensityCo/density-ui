@@ -5,10 +5,9 @@
 .content-panel {
   box-sizing: border-box;
   float: left;
-  width: 65%;
+  width: 70%;
   height: 100%;
   max-height: 100%;
-  padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
   overflow-y: scroll;
@@ -32,7 +31,6 @@
   border-top: 1px solid $tan-light;
 
   &:first-child {
-    padding-top: 0;
     border-top: none;
   }
 
@@ -47,6 +45,6 @@
 
 @media (min-width: $screen-md) {
   .content-panel {
-    width: 75%;
+    width: 80%;
   }
 }
