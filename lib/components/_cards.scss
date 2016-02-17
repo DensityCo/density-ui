@@ -1,0 +1,40 @@
+//
+// Cards
+// -----------------------------------------
+
+.card {
+  box-sizing: border-box;
+  padding-top: 20px;
+  background-color: #fff;
+  border: 1px solid $gray;
+  border-bottom: 2px solid $gray;
+  border-radius: $border-radius-base;
+}
+
+.card-header {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card-header-title {
+  font-size: 22px;
+}
+
+.card-body {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: $gray-dark;
+}
+
+.card-footer {
+  @include clearfix;
+  padding: 10px;
+  border-top: 1px solid $gray;
+}
+
+.card-footer-actions {
+  float: right;
+}

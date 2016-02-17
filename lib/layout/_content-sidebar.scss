@@ -44,6 +44,7 @@
       color: $gray;
       font-weight: 500;
       text-decoration: none;
+      @include transition(color 200ms ease-in-out);
 
       &:hover {
         color: $gray-darker;
