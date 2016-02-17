@@ -1,0 +1,31 @@
+//
+// Code
+// -----------------------------------------
+
+pre {
+  max-width: 100%;
+  max-height: 300px;
+  @include scroll-x();
+  @include scroll-y();
+}
+
+pre code {
+  font-size: 12px;
+}
+
+// Prism Overrdies
+code[class*="language-"],
+pre[class*="language-"] {
+  text-shadow: none;
+}
+
+pre[class*="language-"] {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: $gray-lighter;
+  border: none;
+  border-radius: $border-radius-base;
+  line-height: 1.2;
+}

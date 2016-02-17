@@ -2,10 +2,10 @@
 .button {
   @include button-reset;
   display: inline-block;
-  padding: 6px 15px 5px;
+  padding: 6px 15px;
   background-color: transparent;
-  border: 2px solid transparent;
-  border-radius: $button-border-radius;
+  border: 1px solid transparent;
+  border-radius: $button-height / 2;
   color: $brand-primary;
   text-transform: uppercase;
   font-family: "Avenir Next Condensed";
@@ -20,6 +20,13 @@
     background-color: $tan-lighter;
     @include transition(all 200ms ease-in-out);
   }
+}
+
+.button-icon {
+  padding: 0;
+  height: $button-height;
+  width: $button-height;
+  line-height: $button-height + 6;
 }
 
 .button-default {

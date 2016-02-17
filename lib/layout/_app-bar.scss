@@ -14,18 +14,17 @@
   position: relative;
   z-index: $zindex-side-nav + 20;
   float: left;
-  height: 40px;
-  width: 40px;
+  height: $button-height;
+  width: $button-height;
   margin-top: 8px;
   margin-left: 10px;
   margin-right: 10px;
   background-color: transparent;
   border-radius: 50%;
-  line-height: 44px;
+  line-height: $button-height + 4;
   color: rgba($gray-dark, 0.7);
   font-size: 22px;
   font-family: $font-family-base;
-  transition: background-color 0.1s ease-in;
   overflow: hidden;
   @include transition(all 100ms ease-in);
 
