@@ -28,10 +28,10 @@
   padding-bottom: 80px;
   padding-left: 30px;
   padding-right: 30px;
-  border-top: 1px solid $tan-light;
+  border-bottom: 1px solid $tan-light;
 
-  &:first-child {
-    border-top: none;
+  &:last-child {
+    border-bottom: none;
   }
 
   .row + .row { padding-top:65px; }
