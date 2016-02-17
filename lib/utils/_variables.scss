@@ -56,12 +56,12 @@ $font-size-h4:            $font-size-base !default;
 $font-size-h5:            $font-size-base !default;
 $font-size-h6:            ceil($font-size-base * 0.75) !default; // ~12px
 
-$line-height-base:        1.375 !default; // 20/14
+$line-height-base:        1.4 !default; // 20/14
 $line-height-computed:    floor($font-size-base * $line-height-base) !default; // ~20px
 
 $headings-font-family:    $font-family-base !default;
 $headings-font-weight:    400 !default;
-$headings-line-height:    1.1 !default;
+$headings-line-height:    1.4 !default;
 $headings-color:          inherit !default;
 
 
@@ -299,6 +299,9 @@ $toolbar-height-large:       100px;
 
 $app-bar-height:             $toolbar-height;
 $app-bar-bg:                 #fff;
+
+$app-bar-color:              rgba($gray-dark, 1);
+$app-bar-color-highlight:    rgba($gray-darker, 0.8);
 
 // Search Box
 // -------------------------

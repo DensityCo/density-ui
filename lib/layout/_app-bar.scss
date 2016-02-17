@@ -22,7 +22,7 @@
   background-color: transparent;
   border-radius: 50%;
   line-height: $button-height + 4;
-  color: rgba($gray-dark, 0.7);
+  color: $app-bar-color;
   font-size: 22px;
   font-family: $font-family-base;
   overflow: hidden;
@@ -31,7 +31,7 @@
   i { line-height: inherit; }
 
   &:hover {
-    color: rgba($gray-dark, 0.9);
+    color: $app-bar-color-highlight;
     background-color: rgba($gray-dark, 0.1);
     @include transition(all 200ms ease-in);
   }
@@ -70,7 +70,7 @@
   padding-left: 10px;
   font-size: 16px;
   line-height: $app-bar-height;
-  color: rgba($gray-dark, 0.7);
+  color: $app-bar-color;
 }
 
 
@@ -117,10 +117,10 @@
   padding-left: 25px;
   padding-right: 25px;
   font-size: 16px;
-  color: rgba($gray-dark, 0.7);
+  color: $app-bar-color;
   @include transition(color 200ms ease-in-out);
 
-  &:hover { color: rgba($gray-dark, 0.9); }
+  &:hover { color: $app-bar-color-highlight; }
 }
 
 .app-bar-app-action-icon {
@@ -135,7 +135,7 @@
   width: 15px;
   border-radius: 50%;
   background-color: $brand-danger;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(#000,0.2);
   color: #fff;
   line-height: 15px;
   text-align: center;
@@ -152,15 +152,15 @@
   padding-left: 10px;
   padding-right: 10px;
   line-height: $app-bar-height - 2;
-  color: rgba($gray-dark, 0.7);
+  color: $app-bar-color;
   font-size: $font-size-base;
   font-family: $font-family-base;
   @include transition(color 200ms ease-in-out);
 
   &:hover {
-    color: rgba($gray-dark, 0.9);
+    color: $app-bar-color-highlight;
 
-    .app-bar-account-avatar { border-color: rgba($gray-dark, 0.9); }
+    .app-bar-account-avatar { border-color: $app-bar-color-highlight; }
   }
 }
 
@@ -170,7 +170,7 @@
   width: 25px;
   margin-left: 5px;
   margin-top: 12px;
-  border: 1px solid rgba($gray-dark, 0.7);
+  border: 1px solid $app-bar-color;
   border-radius: 50%;
   line-height: 40px;
   overflow: hidden;
