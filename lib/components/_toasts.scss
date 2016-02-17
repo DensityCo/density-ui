@@ -17,14 +17,16 @@
 
 .toast-success {
   i {
-    vertical-align: top;
+    margin-right: 5px;
+    vertical-align: text-bottom;
     color: $brand-success;
   }
 }
 
 .toast-danger {
   i {
-    vertical-align: top;
+    margin-right: 5px;
+    vertical-align: text-bottom;
     color: $brand-danger;
   }
 }
