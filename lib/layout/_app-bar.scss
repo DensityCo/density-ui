@@ -5,8 +5,8 @@
 .app-bar {
   box-sizing: border-box;
   height: $app-bar-height;
-  background-color: $gray-darker;
-  border-bottom: 1px solid $gray-lighter;
+  background-color: $app-bar-bg;
+  // border-bottom: 1px solid $gray-lighter;
 }
 
 .app-bar-side-nav-btn {
