@@ -4,27 +4,26 @@
 
 .card {
   box-sizing: border-box;
-  padding-top: 20px;
   background-color: #fff;
   border: 1px solid $gray;
-  border-bottom: 2px solid $gray;
+  border-bottom: 3px solid $gray;
   border-radius: $border-radius-base;
 }
 
 .card-header {
   position: relative;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-bottom: 10px;
 
   .close {
     @include button-reset;
-    @include vertical-align-y(absolute);
+    position: absolute;
+    top: 10px;
     right: 10px;
     height: $button-height;
     width: $button-height;
     background-color: transparent;
     border-radius: 50%;
-    color: rgba($gray-dark, 0.7);
+    color: rgba($gray, 0.5);
     line-height: $button-height + 10;
     @include transition(
       background-color 200ms ease-in-out,
@@ -34,23 +33,54 @@
     i:before { font-size: 16px; }
 
     &:hover {
-      color: rgba($gray-dark, 0.9);
+      color: rgba($gray, 1);
       background-color: rgba($gray-dark, 0.1);
     }
   }
 }
 
+.card-header-image {
+  object-fit: cover;
+  height: 150px;
+  width: 100%;
+}
+
+.card-header-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 80px;
+  @include linear-gradient(90deg, #000, transparent);
+}
+
 .card-header-title {
   font-size: 22px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 0;
 }
 
 .card-body {
+  padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   font-size: 14px;
   line-height: 1.8;
   color: $gray-dark;
+
+  p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+
+.card-body-scroll {
+  max-height: 200px;
+  @include scroll-y();
 }
 
 .card-footer {
