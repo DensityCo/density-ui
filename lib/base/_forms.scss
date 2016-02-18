@@ -3,6 +3,57 @@
 // -----------------------------------------
 
 
+// Input Text
+// ---------------------
+input[type=text] {
+  height: 44px;
+  font-size: $font-size-base;
+  font-family: $font-family-base;
+  @include placeholder-color($gray);
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+textarea {
+  min-height: 44px;
+  padding-bottom: 15px;
+  font-size: $font-size-base;
+  font-family: $font-family-base;
+  resize: none;
+  @include placeholder-color($gray);
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+
+// Form Controls
+// ---------------------
+.form-control {
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid $gray-light;
+  @include transition(border 100ms ease-in-out);
+
+  &:focus,
+  &:active {
+    border-bottom: 1px solid $brand-primary;
+  }
+
+  &[disabled] {
+    border-bottom: 1px dashed $gray-light;
+    cursor: not-allowed;
+    @include select-none;
+    @include placeholder-color($gray-light);
+  }
+}
+
+
 
 // Checkboxes
 // ---------------------
