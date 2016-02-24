@@ -35,9 +35,10 @@ textarea {
 // Form Controls
 // ---------------------
 .form-control {
+  box-sizing: content-box;
   margin-bottom: 20px;
   border: none;
-  border-bottom: 1px solid $gray-light;
+  border-bottom: 1px solid $gray;
   @include transition(border 100ms ease-in-out);
 
   &:focus,
@@ -57,54 +58,99 @@ textarea {
 
 // Checkboxes
 // ---------------------
+.checkbox {
+  display: inline-block;
+  padding-top: 2px;
+}
+
 input[type=checkbox] {
   display: none;
   margin: 0;
 }
 
 input[type=checkbox] + label {
-  display:inline-block;
-  height: 22px;
-  width: 22px;
-  margin: 0;
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  text-transform: none;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -webkit-font-feature-settings: 'liga';
-  -webkit-font-smoothing: antialiased;
-  font-size: 22px;
-  line-height: 22px;
-  vertical-align: middle;
-  cursor: pointer;
+  color: $gray-dark;
 
-  &:before { content:"check_box_outline_blank"; }
+  &:before {
+    display:inline-block;
+    height: 22px;
+    width: 22px;
+    margin: 0;
+    margin-right: 7px;
+    margin-top: -4px;
+    font-family: 'density-icons';
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    font-size: 19px;
+    line-height: 22px;
+    vertical-align: middle;
+    cursor: pointer;
+    color: $gray;
+    content: "\e212";
+  }
 }
 
 input[type=checkbox]:checked + label {
-  display:inline-block;
-  height: 22px;
-  width: 22px;
-  margin: 0;
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  text-transform: none;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -webkit-font-feature-settings: 'liga';
-  -webkit-font-smoothing: antialiased;
-  font-size: 22px;
-  line-height: 22px;
-  vertical-align: middle;
-  cursor: pointer;
-  color: $brand-primary;
 
-  &:before { content:"check_box_outline"; }
+  &:before {
+    color: $brand-primary;
+    content: "\e211";
+  }
+}
+
+
+// Radios
+// ---------------------
+.radio {
+  display: inline-block;
+  padding-top: 2px;
+}
+
+input[type=radio] {
+  display: none;
+  margin: 0;
+}
+
+input[type=radio] + label {
+  color: $gray-dark;
+
+  &:before {
+    display:inline-block;
+    height: 22px;
+    width: 22px;
+    margin: 0;
+    margin-right: 7px;
+    margin-top: -4px;
+    font-family: 'density-icons';
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    font-size: 21px;
+    line-height: 22px;
+    vertical-align: middle;
+    cursor: pointer;
+    color: $gray;
+    content: "\e213";
+  }
+}
+
+input[type=radio]:checked + label {
+
+  &:before {
+    color: $brand-primary;
+    content: "\e214";
+  }
 }
