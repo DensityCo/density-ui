@@ -16,7 +16,7 @@
   float: left;
   height: $button-height;
   width: $button-height;
-  margin-top: 8px;
+  margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
   background-color: transparent;
@@ -28,7 +28,11 @@
   overflow: hidden;
   @include transition(all 100ms ease-in);
 
-  i { line-height: inherit; }
+  i {
+    line-height: inherit;
+
+    &:before { font-size: 20px; }
+  }
 
   &:hover {
     color: $app-bar-color-highlight;

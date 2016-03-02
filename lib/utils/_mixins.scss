@@ -36,7 +36,7 @@
 @mixin button-style($color) {
   background-color: $color;
   color: #fff;
-  border-color: darken($color, 5%);
+  border-color: $color;
 
   &.button-inverse {
     background-color: transparent;
@@ -45,7 +45,16 @@
 
   &:hover {
     background-color: darken($color, 5%);
+    border-color: darken($color, 5%);
     color: #fff;
+  }
+
+  &[disabled] {
+    color: $gray-light;
+    background-color: $gray-lighter;
+    border-color: $gray-lighter;
+
+    &:hover { background-color: $gray-lighter; }
   }
 }
 

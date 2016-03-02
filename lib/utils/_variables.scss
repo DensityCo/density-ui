@@ -112,7 +112,7 @@ $table-border-color:                 #ddd !default; // table and cell border
 // Buttons
 // -------------------------
 
-$button-height:                     38px;
+$button-height:                     35px;
 
 $button-font-weight:                500 !default;
 $button-border-radius:              4px;
@@ -210,7 +210,8 @@ $grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
 // Navs
 // -------------------------
 
-$nav-link-padding:                          16px 15px !default;
+$nav-link-padding:                          17px 0 !default;
+$nav-link-margin:                           0 30px !default;
 $nav-link-hover-bg:                         $gray-lighter !default;
 
 $nav-disabled-link-color:                   $gray-light !default;
@@ -220,11 +221,11 @@ $nav-open-link-hover-color:                 #fff !default;
 
 // Tabs
 $nav-tabs-border-color:                     transparent !default;
-
 $nav-tabs-link-hover-border-color:          $gray-light !default;
+$nav-tabs-active-border-color:              $brand-primary !default;
 
 $nav-tabs-active-link-hover-bg:             transparent !default;
-$nav-tabs-active-link-hover-color:          $brand-primary !default;
+$nav-tabs-active-link-hover-color:          $gray-darker !default;
 $nav-tabs-active-link-hover-border-color:   $brand-primary !default;
 
 $nav-tabs-justified-link-border-color:            #ddd !default;

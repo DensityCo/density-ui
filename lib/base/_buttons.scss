@@ -2,23 +2,31 @@
 .button {
   @include button-reset;
   display: inline-block;
-  padding: 6px 15px;
+  padding: 5px 15px;
   background-color: transparent;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: $button-height / 2;
   color: $brand-primary;
   text-transform: uppercase;
   font-family: "Avenir Next Condensed";
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
   @include transition(
     background 200ms ease-in-out,
     color 200ms ease-in-out
   );
 
   &:hover {
-    background-color: $tan-lighter;
+    background-color: rgba($gray-dark, 0.1);
     @include transition(all 200ms ease-in-out);
+  }
+
+  &[disabled] {
+    color: $gray-light;
+    cursor: not-allowed;
+
+    &:hover { background-color: inherit; }
   }
 }
 
@@ -26,7 +34,9 @@
   padding: 0;
   height: $button-height;
   width: $button-height;
-  line-height: $button-height + 6;
+  line-height: $button-height + 5;
+
+  & + .button-icon { margin-left: 10px; }
 }
 
 .button-default {

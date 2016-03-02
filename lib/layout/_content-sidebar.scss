@@ -61,6 +61,11 @@
           color: $brand-primary;
         }
       }
+      &[disabled] {
+        cursor: not-allowed;
+
+        &:hover { color: $gray; }
+      }
     }
   }
 
