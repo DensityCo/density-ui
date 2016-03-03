@@ -1,58 +1,35 @@
-//import bootstrap modules
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/variables";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+// Vendor
+@import "vendor/bourbon/app/assets/stylesheets/bourbon";
+@import "vendor/meyer-reset/stylesheets/meyer-reset";
 
-// Reset and dependencies
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/print";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
+// Utils
+@import "utils/variables";
+@import "utils/mixins";
 
-// Core CSS
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/type";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/code";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/grid";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/tables";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/forms";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
+// Base
+@import "base/flex-grid";
+@import "base/typography";
+@import "base/buttons";
+@import "base/forms";
 
 // Components
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/button-groups";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/input-groups";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/navs";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/pagination";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/pager";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/labels";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/badges";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/jumbotron";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/thumbnails";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/alerts";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/progress-bars";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/media";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/list-group";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/panels";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/wells";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/close";
+@import "components/toolbar";
+@import "components/tables";
+@import "components/navs";
+@import "components/search-box";
+@import "components/cards";
+@import "components/code";
+@import "components/toasts";
 
-// Components w/ JavaScript
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/modals";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/tooltip";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/popovers";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/carousel";
-
-// Utility classes
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+// Layout
+@import "layout/scaffolding";
+@import "layout/app-bar";
+@import "layout/content-inner";
+@import "layout/content-panel";
+@import "layout/content-sidebar";
+@import "layout/content-toolbar";
+@import "layout/side-nav";
 
 
-// Density UI base
-@import "base/variables.scss";
-@import "base/section.scss";
-
-// Density UI Components
-@import "components/navbar";
+// Themes
+@import "themes/density-ui";

@@ -1,0 +1,120 @@
+@mixin button-reset {
+  display: inline-block;
+  background: none;
+  border: 0;
+  color: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button; /* for input */
+  -webkit-user-select: none; /* for button */
+     -moz-user-select: none;
+      -ms-user-select: none;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &:focus { outline: none; }
+
+  &::-moz-focus-inner {
+      border: 0;
+      padding: 0;
+  }
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+@mixin button-style($color) {
+  background-color: $color;
+  color: #fff;
+  border-color: $color;
+
+  &.button-inverse {
+    background-color: transparent;
+    color: $color;
+  }
+
+  &:hover {
+    background-color: darken($color, 5%);
+    border-color: darken($color, 5%);
+    color: #fff;
+  }
+
+  &[disabled] {
+    color: $gray-light;
+    background-color: $gray-lighter;
+    border-color: $gray-lighter;
+
+    &:hover { background-color: $gray-lighter; }
+  }
+}
+
+
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+@mixin overflow-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+// Vertically center your element
+@mixin vertical-align-y($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin vertical-align-x($position: relative) {
+  position: $position;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+
+// Make elemement scrollable and smooth on mobile
+@mixin scroll-y {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+@mixin scroll-x {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+@mixin placeholder-color($color) {
+  &::-webkit-input-placeholder { color: $color; }
+  &:-moz-placeholder { color: $color; }
+  &::-moz-placeholder { color: $color; }
+  &:-ms-input-placeholder { color: $color; }
+}
+
+@mixin select-none {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

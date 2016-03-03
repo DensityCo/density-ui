@@ -1,0 +1,96 @@
+//
+// Side Nav
+// -----------------------------------------
+
+.side-nav {
+  position:fixed;
+  z-index: $zindex-side-nav;
+  top: 0;
+  /* left: 0; */
+  left: -320px;
+  height: 100%;
+  width: 320px;
+  background: rgba($gray-light, 0.98);
+  box-shadow: 4px 0 15px rgba(0,0,0,0.05);
+  color: #fff;
+  transition: left ease-in-out .1s;
+
+  &.open {
+    left: 0;
+    transition: left ease-in-out .2s;
+  }
+}
+
+.side-nav-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: $zindex-side-nav + 10;
+  height: $app-bar-height;
+  width: 100%;
+  background-color: darken($gray-light, 2%);
+}
+
+.side-nav-body {
+  position: absolute;
+  top: $app-bar-height;
+  left: 0;
+  z-index: $zindex-side-nav + 10;
+  height: calc(100% - #{$app-bar-height});
+  width: 100%;
+  overflow-y: scroll;
+  -webkit-transform: translate3d(0, 0, 0)
+}
+
+.side-nav-section {
+  @extend .list-unstyled;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  margin-bottom: 0;
+  border-top: 1px solid rgba($gray-dark,0.2);
+
+  li {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .side-nav-section-header {
+    font-size: 16px;
+    padding-top: 8px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+
+    > a {
+      padding-left: 0;
+      padding-bottom: 0;
+      padding-top: 0;
+      color: $gray-darker;
+    }
+  }
+
+  li > a {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-radius: 4px 0 0 4px;
+    vertical-align: middle;
+    color: $gray-dark;
+    text-decoration: none;
+    @include transition(color 200ms ease-in-out);
+
+    i {
+      vertical-align: middle;
+      font-size: 20px;
+    }
+
+    &:hover {
+      color: $gray-darker;
+    }
+    &.active {
+      color: $gray-darker;
+    }
+  }
+
+  &:first-child { border-top: none; }
+}

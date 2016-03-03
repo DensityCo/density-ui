@@ -1,0 +1,101 @@
+//
+// Cards
+// -----------------------------------------
+
+.card {
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid $gray-light;
+  border-bottom: 3px solid $gray-light;
+  border-radius: $border-radius-base;
+}
+
+.card-header {
+  position: relative;
+
+  .close {
+    @include button-reset;
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    height: $button-height;
+    width: $button-height;
+    background-color: transparent;
+    border-radius: 50%;
+    color: rgba($gray-darker, 0.5);
+    line-height: $button-height + 10;
+    @include transition(
+      background-color 200ms ease-in-out,
+      color 200ms ease-in-out
+    );
+
+    i:before { font-size: 16px; }
+
+    &:hover {
+      color: rgba($gray-darker, 0.9);
+      background-color: rgba($gray-dark, 0.1);
+    }
+  }
+}
+
+.card-header-image {
+  object-fit: cover;
+  height: 150px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.card-header-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 150px;
+  opacity: 0.9;
+  @include linear-gradient($gold, transparent);
+  background-color: transparent;
+}
+
+.card-header-title {
+  font-size: 22px;
+  padding-top: 20px;
+  padding-bottom: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid $gray-lighter;
+  margin-bottom: 0;
+}
+
+.card-body {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  line-height: 1.8;
+
+  p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: $gray-dark;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.card-body-scroll {
+  max-height: 200px;
+  @include scroll-y();
+}
+
+.card-footer {
+  @include clearfix;
+  padding: 10px;
+  border-top: 1px solid $gray-light;
+}
+
+.card-footer-actions {
+  float: right;
+}

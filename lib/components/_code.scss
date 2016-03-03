@@ -1,0 +1,42 @@
+//
+// Code
+// -----------------------------------------
+
+pre {
+  box-sizing: border-box;
+  padding: 0;
+  // padding-bottom: 20px;
+  padding-left: 20px;
+  margin: 0;
+  max-width: 100%;
+  // max-height: 200px;
+  // @include scroll-x();
+  // @include scroll-y();
+  background-color: $gray-lighter;
+  border: 1px solid $gray-light;
+  border-radius: $border-radius-base;
+  white-space: nowrap;
+  word-wrap: break-word;
+  word-break: normal;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  line-height: 1.6;
+  font-size: 11px;
+  overflow: auto;
+}
+
+pre code {
+  display: inline-block;
+  padding: 0;
+  background-color: transparent;
+  white-space: pre;
+
+  &.hljs {
+    display: inline-block;
+    padding: 0;
+    background-color: transparent;;
+  }
+}
+
+pre code:first-line {
+  line-height: 0px;
+}
