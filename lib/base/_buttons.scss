@@ -23,7 +23,7 @@
   }
 
   &[disabled] {
-    color: $gray-light;
+    color: $gray;
     cursor: not-allowed;
 
     &:hover { background-color: inherit; }

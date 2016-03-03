@@ -137,7 +137,7 @@
     float: left;
     margin-bottom: 0;
     padding: 0;
-    font-weight: 500;
+    font-weight: 400;
     // letter-spacing: 2px;
     // text-transform: uppercase;
 
@@ -168,6 +168,7 @@
         background-color: $nav-tabs-active-link-hover-bg;
         border: none;
         border-bottom: 2px solid $nav-tabs-active-border-color;
+        font-weight: 500;
       }
     }
   }
