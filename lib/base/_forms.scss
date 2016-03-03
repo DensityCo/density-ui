@@ -39,11 +39,12 @@ textarea {
   margin-top: 20px;
   border: none;
   border-bottom: 1px solid $gray;
-  @include transition(border 100ms ease-in-out);
+  @include transition(all 100ms ease-in-out);
 
   &:focus,
   &:active {
-    border-bottom: 1px solid $brand-primary;
+    border-bottom-color: $brand-primary;
+    box-shadow: 0 1px 0 $brand-primary;
   }
 
   &[disabled] {

@@ -7,6 +7,8 @@
   height: $app-bar-height;
   background-color: $app-bar-bg;
   border-bottom: 1px solid $gray-lighter;
+
+  .nav { float: left; }
 }
 
 .app-bar-side-nav-btn {
@@ -92,18 +94,20 @@
 }
 
 
-// App Bar Right Nav
+// App Bar Left Nav
 // ---------------------
-.app-bar-right-nav {
-  float: right;
-  padding-right: 10px;
-  text-align: right;
+.app-bar-left-nav {
+  float: left;
+  padding-left: 10px;
+  text-align: left;
 
+  //duplicative .popover
   .popover {
     width: 300px;
     margin-top: -9px;
   }
 
+  //duplicative .popover-content
   .popover-content {
     max-height: 350px;
     padding-top: 0;
@@ -114,12 +118,42 @@
   }
 }
 
+
+// App Bar Right Nav
+// ---------------------
+.app-bar-right-nav {
+  float: right;
+  padding-right: 10px;
+  text-align: right;
+
+  //duplicative .popover
+  .popover {
+    width: 300px;
+    margin-top: -9px;
+  }
+
+  //duplicative .popover-content
+  .popover-content {
+    max-height: 350px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    @include scroll-y();
+  }
+}
+
+// App Actions
+// ---------------------
+
+.nav + .app-bar-app-action { margin-left: 40px; }
 .app-bar-app-action {
   @include button-reset;
   float: left;
   height: $app-bar-height;
   padding-left: 25px;
   padding-right: 25px;
+  margin-left: 20px;
   font-size: 16px;
   color: $app-bar-color;
   @include transition(color 200ms ease-in-out);

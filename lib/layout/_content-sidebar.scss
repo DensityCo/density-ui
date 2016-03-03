@@ -24,9 +24,6 @@
 .content-sidebar {
   .sidebar-nav-list {
     @extend .list-unstyled;
-    margin-left: -15px;
-    margin-right: -41px;
-    margin-bottom: 25px;
     font-weight: normal;
 
     li {
@@ -42,7 +39,7 @@
       padding-left: 15px;
       border-radius: 4px 0 0 4px;
       color: $gray;
-      font-weight: 500;
+      font-weight: 400;
       text-decoration: none;
       @include transition(color 200ms ease-in-out);
 
@@ -51,6 +48,7 @@
       }
       &.active {
         color: $gray-darker;
+        font-weight: 500;
 
         &:before {
           @include vertical-align-y(absolute);
