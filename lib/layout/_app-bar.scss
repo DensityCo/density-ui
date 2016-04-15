@@ -58,6 +58,10 @@
   }
 }
 
+.app-bar-side-nav-btn + .app-bar-brand {
+  margin-left: 10px;
+}
+
 .app-bar-title {
   position: relative;
   z-index: $zindex-side-nav + 20;
