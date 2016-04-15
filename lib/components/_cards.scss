@@ -8,8 +8,6 @@
   border: 1px solid $gray-light;
   border-bottom: 3px solid $gray-light;
   border-radius: $border-radius-base;
-
-  &+ .card { margin-bottom: 30px; }
 }
 
 .card-header {
