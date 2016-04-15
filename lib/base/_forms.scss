@@ -5,7 +5,8 @@
 
 // Input Text
 // ---------------------
-input[type=text] {
+input[type=text],
+input[type=number] {
   height: 44px;
   font-size: $font-size-base;
   font-family: $font-family-base;
