@@ -99,3 +99,7 @@
 .card-footer-actions {
   float: right;
 }
+
+.card-error {
+  border-color: darken($brand-danger, 5%);
+}

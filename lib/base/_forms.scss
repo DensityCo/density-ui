@@ -7,7 +7,6 @@
 // ---------------------
 input[type=text],
 input[type=number] {
-  height: 44px;
   font-size: $font-size-base;
   font-family: $font-family-base;
   @include placeholder-color($gray);
@@ -37,6 +36,7 @@ textarea {
 // ---------------------
 .form-control {
   box-sizing: content-box;
+  height: 44px;
   margin-top: 20px;
   border: none;
   border-bottom: 1px solid $gray;
