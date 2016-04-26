@@ -40,6 +40,7 @@ textarea {
   margin-top: 20px;
   border: none;
   border-bottom: 1px solid $gray;
+  background-color: transparent;
   @include transition(all 100ms ease-in-out);
 
   &:focus,
