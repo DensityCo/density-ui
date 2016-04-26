@@ -67,7 +67,7 @@ p {
   &:last-child { margin-bottom: 0; }
 }
 
-.row p:last-child { margin-bottom: 25px; }
+.row > p:last-child { margin-bottom: 25px; }
 
 .lead {
   margin-bottom: $line-height-computed;
