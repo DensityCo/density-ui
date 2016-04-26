@@ -1,5 +1,6 @@
 
-.button {
+.button,
+a.button {
   @include button-reset;
   display: inline-block;
   padding: 5px 15px;
@@ -31,7 +32,8 @@
   }
 }
 
-.button-icon {
+.button-icon,
+a.button-icon {
   padding: 0;
   height: $button-height;
   width: $button-height;
@@ -40,18 +42,22 @@
   & + .button-icon { margin-left: 10px; }
 }
 
-.button-default {
+.button-default,
+a.button-default {
   @include button-style($tan-dark);
 }
 
-.button-primary {
+.button-primary,
+a.button-primary {
   @include button-style($brand-primary);
 }
 
-.button-success {
+.button-success,
+a.button-success {
   @include button-style($brand-success);
 }
 
-.button-danger {
+.button-danger,
+a.button-danger {
   @include button-style($brand-danger);
 }
