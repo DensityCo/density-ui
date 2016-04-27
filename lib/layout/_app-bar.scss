@@ -43,6 +43,7 @@
 }
 
 .app-bar-brand {
+  display: inline-block;
   position: relative;
   z-index: $zindex-side-nav + 20;
   float: left;
@@ -152,8 +153,10 @@
 
 .nav + .app-bar-app-action { margin-left: 30px; }
 
-.app-bar-app-action {
+.app-bar-app-action,
+a.app-bar-app-action {
   @include button-reset;
+  line-height: $app-bar-height;
   float: left;
   height: $app-bar-height;
   padding-left: 25px;
@@ -168,6 +171,12 @@
 
 .app-bar-app-action-icon {
   position: relative;
+
+  .icon-shopping-cart:before,
+  .icon-shopping-cart-full:before {
+    font-size: 20px;
+    vertical-align: sub;
+  }
 }
 
 .app-bar-app-action-badge {
