@@ -7,7 +7,15 @@
   padding-bottom: 40px;
   padding-left: 15px;
   padding-right: 15px;
+
+  &:last-child {
+    padding-bottom: 80px;
+  }
 }
+
+
+// Media
+// ------------------------
 
 @media (min-width: $screen-sm) {
   .content-section {

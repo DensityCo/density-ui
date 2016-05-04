@@ -2,6 +2,9 @@
 // Toolbar
 // -----------------------------------------
 .toolbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   position: relative;
   box-sizing: border-box;
   min-height: 56px;
@@ -10,6 +13,7 @@
 }
 
 .toolbar-breadcrumb {
+  flex-grow: 1;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -30,16 +34,17 @@
 }
 
 .toolbar-title {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  flex-grow: 1;
   font-size: 22px;
 }
 
 .toolbar-subtitle {
   padding-top: 5px;
   font-size: 16px;
-  color: $tan-dark;
+}
+
+.toolbar-actions {
+  flex-grow: 0;
 }
 
 %toolbar-large { min-height: $toolbar-height-large; }
