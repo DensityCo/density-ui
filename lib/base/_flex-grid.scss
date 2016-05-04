@@ -71,6 +71,10 @@ $fg-breakpoints: (
   max-width: $screen-lg;
 }
 
+.container-focused {
+  max-width: $screen-sm;
+}
+
 /**
  * Row wrapper class, flex box parent.
  */
