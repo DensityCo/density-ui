@@ -89,6 +89,15 @@ p {
   color: $gray;
 }
 
+hr {
+  height: 0;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border: 0;
+  border-top: 1px solid $gray-light;
+  color: $gray-light;
+}
+
 
 // Emphasis & misc
 // -------------------------
