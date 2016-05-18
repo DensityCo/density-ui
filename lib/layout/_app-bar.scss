@@ -3,10 +3,13 @@
 // -----------------------------------------
 
 .app-bar {
+  position: relative;
+  z-index: 4000;
   box-sizing: border-box;
   height: $app-bar-height;
   background-color: $app-bar-bg;
   border-bottom: 1px solid $gray-lighter;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.02);
 
   .nav { float: left; }
 }
