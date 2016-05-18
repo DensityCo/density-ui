@@ -1,3 +1,13 @@
+// Links
+// -------------------------
+
+a,
+a:hover,
+a:visited {
+  color: $brand-primary;
+}
+
+
 // Headings
 // -------------------------
 
@@ -53,7 +63,6 @@ h4, .h4 { font-size: $font-size-h4; }
 h5, .h5 { font-size: $font-size-h5; }
 h6, .h6 { font-size: $font-size-h6; }
 
-h3 { color: $gold; }
 h4 { font-weight: 500; }
 h6 { color: $gray-dark; }
 
@@ -68,7 +77,7 @@ p {
   &:last-child { margin-bottom: 0; }
 }
 
-.row p:last-child { margin-bottom: 25px; }
+.row > p:last-child { margin-bottom: 25px; }
 
 .lead {
   margin-bottom: $line-height-computed;
@@ -78,6 +87,15 @@ p {
 
 .secondary {
   color: $gray;
+}
+
+hr {
+  height: 0;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border: 0;
+  border-top: 1px solid $gray-light;
+  color: $gray-light;
 }
 
 
@@ -167,10 +185,11 @@ ol {
   }
 }
 
+ul { list-style: disc; }
+
 li {
   padding-top: 5px;
   padding-bottom: 5px;
-  font-size: 14px;
 }
 
 // List options

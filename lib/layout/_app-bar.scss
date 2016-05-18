@@ -3,10 +3,13 @@
 // -----------------------------------------
 
 .app-bar {
+  position: relative;
+  z-index: 4000;
   box-sizing: border-box;
   height: $app-bar-height;
   background-color: $app-bar-bg;
   border-bottom: 1px solid $gray-lighter;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.02);
 
   .nav { float: left; }
 }
@@ -20,7 +23,6 @@
   width: $button-height;
   margin-top: 10px;
   margin-left: 10px;
-  margin-right: 10px;
   background-color: transparent;
   border-radius: 50%;
   line-height: $button-height + 4;
@@ -44,10 +46,12 @@
 }
 
 .app-bar-brand {
+  display: inline-block;
   position: relative;
   z-index: $zindex-side-nav + 20;
   float: left;
   height: $app-bar-height;
+  margin-left: 15px;
   font-size: 18px;
   color: rgba($gray-dark, 0.7);
 
@@ -56,6 +60,10 @@
     top: 52%;
     height: 20px;
   }
+}
+
+.app-bar-side-nav-btn + .app-bar-brand {
+  margin-left: 10px;
 }
 
 .app-bar-title {
@@ -148,8 +156,10 @@
 
 .nav + .app-bar-app-action { margin-left: 30px; }
 
-.app-bar-app-action {
+.app-bar-app-action,
+a.app-bar-app-action {
   @include button-reset;
+  line-height: $app-bar-height;
   float: left;
   height: $app-bar-height;
   padding-left: 25px;
@@ -164,6 +174,12 @@
 
 .app-bar-app-action-icon {
   position: relative;
+
+  .icon-shopping-cart:before,
+  .icon-shopping-cart-full:before {
+    font-size: 20px;
+    vertical-align: sub;
+  }
 }
 
 .app-bar-app-action-badge {

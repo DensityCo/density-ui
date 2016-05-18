@@ -5,8 +5,8 @@
 
 // Input Text
 // ---------------------
-input[type=text] {
-  height: 44px;
+input[type=text],
+input[type=number] {
   font-size: $font-size-base;
   font-family: $font-family-base;
   @include placeholder-color($gray);
@@ -36,9 +36,11 @@ textarea {
 // ---------------------
 .form-control {
   box-sizing: content-box;
+  height: 44px;
   margin-top: 20px;
   border: none;
   border-bottom: 1px solid $gray;
+  background-color: transparent;
   @include transition(all 100ms ease-in-out);
 
   &:focus,
@@ -59,7 +61,6 @@ textarea {
 // ---------------------
 .select {
   position: relative;
-  display: inline-block;
   margin-top: 20px;
 
   select {
@@ -97,6 +98,8 @@ textarea {
     border-bottom: .35rem solid transparent;
     border-left: .35rem solid transparent;
   }
+
+  &.inline { display: inline-block; }
 }
 
 

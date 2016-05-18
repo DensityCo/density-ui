@@ -10,6 +10,12 @@
   border-radius: $border-radius-base;
 }
 
+.card + .card { margin-top: 30px; }
+
+
+// Header
+// ------------------------
+
 .card-header {
   position: relative;
 
@@ -67,28 +73,78 @@
   margin-bottom: 0;
 }
 
+
+// Body
+// ------------------------
+
 .card-body {
-  padding-top: 10px;
+  padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
+  border-bottom: 1px solid $gray-light;
   line-height: 1.8;
 
   p {
-    // font-size: 14px;
     line-height: 1.8;
-    color: $gray-dark;
 
     &:last-child {
       margin-bottom: 0;
     }
   }
+
+  hr {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  &:first-child { padding-top: 10px; }
+  &:last-child { border-bottom: none; }
 }
 
 .card-body-scroll {
   max-height: 200px;
   @include scroll-y();
 }
+
+
+// Cells
+// ------------------------
+
+.card-table-cell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 20px;
+  border-top: 1px solid $gray-lighter;
+
+  &:first-child {
+    border-top: none;
+  }
+}
+
+.card-table-cell-title {
+  flex-grow: 1;
+  line-height: 1.4;
+}
+
+.card-table-cell-subtitle {
+  display: none;
+  flex-grow: 0;
+  padding-right: 20px;
+  text-align: right;
+  font-size: 14px;
+  color: $gray;
+}
+
+.card-table-cell-actions {
+  flex-grow: 0;
+  margin-right: -15px;
+}
+
+
+// Footer
+// ------------------------
 
 .card-footer {
   @include clearfix;
@@ -98,4 +154,22 @@
 
 .card-footer-actions {
   float: right;
+}
+
+.card-success {
+  border-color: $brand-success;
+}
+
+.card-error {
+  border-color: $brand-danger;
+}
+
+
+// Media Queries
+// ------------------------
+
+@media (min-width: $screen-sm) {
+  .card-table-cell-subtitle {
+    display: block;
+  }
 }

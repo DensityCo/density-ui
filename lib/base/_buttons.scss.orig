@@ -1,6 +1,10 @@
+<<<<<<< HEAD
+.button {
+=======
 
 .button,
 a.button {
+>>>>>>> f1a86ad674d0769a9450e3a0c0649f8cf192516d
   @include button-reset;
   display: inline-block;
   padding: 5px 15px;
