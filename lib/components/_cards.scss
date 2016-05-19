@@ -93,6 +93,11 @@
     }
   }
 
+  hr {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
   &:first-child { padding-top: 10px; }
   &:last-child { border-bottom: none; }
 }

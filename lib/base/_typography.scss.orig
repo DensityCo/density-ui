@@ -89,6 +89,9 @@ p {
   color: $gray;
 }
 
+<<<<<<< HEAD
+em { font-style: italic; }
+=======
 hr {
   height: 0;
   margin-bottom: 50px;
@@ -97,8 +100,7 @@ hr {
   border-top: 1px solid $gray-light;
   color: $gray-light;
 }
-
-em { font-style: italic; }
+>>>>>>> a3cd6e9a304125ad9536c0b6bad28c201117a923
 
 
 // Emphasis & misc
