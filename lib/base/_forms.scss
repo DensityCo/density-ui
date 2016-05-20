@@ -5,6 +5,11 @@
 
 // Input Text
 // ---------------------
+input {
+  font-size: $font-size-base;
+  font-family: $font-family-base;
+}
+
 input[type=text],
 input[type=number] {
   font-size: $font-size-base;
