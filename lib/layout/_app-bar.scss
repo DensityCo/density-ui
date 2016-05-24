@@ -9,9 +9,11 @@
   height: $app-bar-height;
   background-color: $app-bar-bg;
   border-bottom: 1px solid $gray-lighter;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.03);
+  @include transition(box-shadow 200ms ease-in-out);
 
   .nav { float: left; }
+
+  &.shadow { box-shadow: 0 4px 24px rgba(0,0,0,0.04); }
 }
 
 .app-bar-side-nav-btn {
