@@ -26,33 +26,6 @@
   width: 70%;
 }
 
-.content-panel-banner {
-  box-sizing: border-box;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.content-panel-section {
-  box-sizing: border-box;
-  max-width: 1024px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  border-bottom: 1px solid $tan-light;
-
-  &:last-child {
-    border-bottom: none;
-  }
-
-  .row + .row { padding-top:65px; }
-
-  img { max-width: 100%; }
-}
-
 
 // Media queries
 // ----------------------
@@ -60,19 +33,5 @@
 @media (min-width: $screen-sm) {
   .content-sidebar + .content-panel {
     width: 80%;
-  }
-
-  .content-panel-banner {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .content-panel-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 }
