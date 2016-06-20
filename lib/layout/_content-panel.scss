@@ -10,7 +10,8 @@
   max-height: 100%;
   @include scroll-y();
   overflow-x: hidden;
-  -webkit-transform: translate3d(0, 0, 0)
+  -webkit-transform: translate3d(0, 0, 0);
+  background-color: #fff;
 }
 
 .content-sidebar + .content-panel {
