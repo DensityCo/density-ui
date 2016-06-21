@@ -52,6 +52,15 @@ a.button-primary {
   @include button-style($brand-primary);
 }
 
+.button-secondary,
+a.button-secondary {
+  @include button-style(#fff);
+
+  &:hover {
+    background-color: rgba(255,255,255,0.15);
+  }
+}
+
 .button-success,
 a.button-success {
   @include button-style($brand-success);
