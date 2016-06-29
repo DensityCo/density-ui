@@ -38,7 +38,7 @@
   top: $app-bar-height;
   left: 0;
   z-index: $zindex-side-nav + 10;
-  height: calc(100% - #{$app-bar-height});
+  height: calc(100% - (#{$app-bar-height} + 20px));
   width: 100%;
   padding-top: 20px;
   overflow-y: scroll;
