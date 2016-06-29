@@ -3,14 +3,37 @@
 // -----------------------------------------
 
 .content-section {
+  position: relative;
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 15px;
   padding-right: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
 
-  &:last-child {
-    padding-bottom: 80px;
-  }
+.content-section-background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  transition: 1s opacity;
+}
+
+.content-section-background-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
 }
 
 

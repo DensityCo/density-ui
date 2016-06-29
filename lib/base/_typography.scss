@@ -15,6 +15,7 @@ body {
   font-family: $font-family-base;
   font-size: $font-size-base;
   color: $text-color;
+  -webkit-text-size-adjust: 100%;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -91,12 +92,14 @@ p {
 
 hr {
   height: 0;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-bottom: 40px;
+  margin-top: 40px;
   border: 0;
   border-top: 1px solid $gray-light;
   color: $gray-light;
 }
+
+em { font-style: italic; }
 
 
 // Emphasis & misc
@@ -157,6 +160,7 @@ cite    { font-style: normal; }
   padding-bottom: (($line-height-computed / 2) - 1);
   margin: 0 0 ($line-height-computed / 2);
   border-bottom: none;
+  font-size: $font-size-h1*1.1;
 }
 
 

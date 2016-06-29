@@ -1,0 +1,72 @@
+.overlay {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255,255,255,0.0);
+  @include transition(
+    background-color 200ms ease-in-out,
+    z-index 0s ease 300ms
+  );
+
+  &.open {
+    z-index: 999999;
+    background-color: rgba(255,255,255,0.96);
+    @include transition(background-color 300ms ease-in-out);
+  }
+}
+
+.overlay-toolbar {
+  justify-content: center;
+
+  .button {
+    align-self: center;
+  }
+}
+
+.overlay-body {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: calc(100% - 56px);
+}
+
+.overlay-video-container {
+  box-sizing: border-box;
+  position: relative;
+  top: 150%;
+  transform: translateY(-50%);
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 56.25%; // 16:9 aspect ratio
+  background-color: #fff;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+  overflow: hidden;
+  border-radius: $border-radius-base;
+  @include transition(top 200ms ease-in-out);
+
+  iframe {
+    position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+    max-height: 576px;
+  }
+
+  &.open {
+    top: calc(50% - 28px);
+    @include transition(top 200ms ease-in-out 100ms);
+  }
+}
+
+// Locks aspect ratio at a 1024 video width with 20px padding on viewport
+@media (min-width: 1064px) {
+  .overlay-video-container {
+    height: 576px;
+    width: 1024px;
+    padding-bottom: 0;
+  }
+}
