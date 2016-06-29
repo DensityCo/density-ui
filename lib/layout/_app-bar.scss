@@ -236,4 +236,15 @@ a.app-bar-app-action {
   i { line-height: inherit; }
 }
 
-.app-bar-account-name { vertical-align: top; }
+.app-bar-account-name {
+  display: none;
+  vertical-align: top;
+}
+
+
+// Media Queries
+// ---------------------
+
+@media (min-width: $screen-sm) {
+  .app-bar-account-name { display: inline-block; }
+}
