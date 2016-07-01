@@ -93,6 +93,7 @@ $fg-breakpoints: (
   flex-direction: column;
   flex-grow: 0;
   flex-shrink: 0;
+  max-width: 100%;
   @include spacing( ( $fg-gutter ), padding, horizontal );
 }
 
