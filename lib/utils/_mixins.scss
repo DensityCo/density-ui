@@ -118,3 +118,9 @@
   -ms-user-select: none;
   user-select: none;
 }
+
+@mixin image-cover {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
