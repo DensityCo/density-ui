@@ -9,11 +9,15 @@ To use Density UI:
 
 In the parent project, install the library by pointing npm to the github repo:
 
-        $ npm install --save git+ssh://git@github.com/densityco/density-ui.git
+```
+$ npm install --save git+ssh://git@github.com/densityco/density-ui.git
+```
 
 **Note:** While we're in initial development you can get a specific branch by using the hash symbol followed by the name of the branch, but you need to escape the hash character itself. For example:
 
-        $ npm install --save git+ssh://git@github.com/densityco/density-ui.git\#feature/some-bleeding-edge-greatness
+```
+$ npm install --save git+ssh://git@github.com/densityco/density-ui.git\#feature/some-bleeding-edge-greatness
+```
 
 ## Parent Workflow
 
