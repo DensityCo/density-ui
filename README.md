@@ -1,5 +1,5 @@
 # Density UI
-Density's front end resources, used as a submodule for any web project.
+Density's front end resources for any and all projects.
 
 ## How to use
 
