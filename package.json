@@ -4,6 +4,10 @@
   "description": "UI framework for Density web projects",
   "author": "Density",
   "license": "UNLICENSED",
+  "dependencies": {
+    "bourbon": "4.x",
+    "node-reset-scss": "1.x"
+  },
   "peerDependencies": {
     "bourbon": "4.x",
     "node-reset-scss": "1.x"
