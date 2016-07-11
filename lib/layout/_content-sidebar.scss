@@ -3,15 +3,14 @@
 // -----------------------------------------
 .content-sidebar {
   display: none;
-  padding-top: 20px;
-  padding-left: 0px;
   box-sizing: border-box;
   float: left;
   height: 100%;
   width: 320px;
+  padding-top: 20px;
+  padding-left: 0px;
   background: rgba(#fff, 0.98);
   color: #fff;
-  //border-right: $gray-lighter;
   box-shadow: 4px 0 60px rgba(0,0,0,0.1);
   @include scroll-y();
   -webkit-transform: translate3d(0, 0, 0);
