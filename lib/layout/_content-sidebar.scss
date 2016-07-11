@@ -11,9 +11,7 @@
   padding-left: 0px;
   background: rgba(#fff, 0.98);
   color: #fff;
-  box-shadow: 4px 0 60px rgba(0,0,0,0.1);
   @include scroll-y();
-  -webkit-transform: translate3d(0, 0, 0);
 }
 
 .sidebar-nav-list {
