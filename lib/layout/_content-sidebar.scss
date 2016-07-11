@@ -4,9 +4,9 @@
 .content-sidebar {
   padding-top: 20px;
   padding-left: 0px;
+  margin-left: -320px;
   box-sizing: border-box;
   float: left;
-  top: 0;
   height: 100%;
   width: 320px;
   background: rgba(#fff, 0.98);
@@ -93,11 +93,8 @@
 // Media queries
 // ----------------------
 
-@media (min-width: $screen-md) {
+@media (min-width: $screen-sm) {
   .content-sidebar {
-    width: 320px;
-  }
-  .content-sidebar + .content-panel {
-    width: calc(100% - 320px);
+    margin-left: 0;
   }
 }
