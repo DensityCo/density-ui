@@ -14,6 +14,10 @@
   background-color: #fff;
 }
 
+.content-sidebar + .content-panel {
+  width: calc(100% - 320px);
+}
+
 .content-toolbar + .content-sidebar + .content-panel {
   height: calc(100% - #{$toolbar-height-large});
 }
@@ -21,14 +25,4 @@
 .content-toolbar + .content-panel {
   height: calc(100% - #{$toolbar-height-large});
   width: 70%;
-}
-
-
-// Media queries
-// ----------------------
-
-@media (min-width: $screen-sm) {
-  .content-sidebar + .content-panel {
-    width: calc(100% - 320px);
-  }
 }
