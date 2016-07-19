@@ -36,7 +36,8 @@
     }
 
     // Disabled state sets text to gray and nukes hover/tab effects
-    &.disabled > a {
+    &.disabled > a,
+    &:disabled > a {
       color: $nav-disabled-link-color;
 
       &:hover,
@@ -146,7 +147,7 @@
     font-weight: 400;
 
     > a {
-      padding-bottom: $nav-link-padding - 2; 
+      padding-bottom: $nav-link-padding - 2;
       margin-right: 2px;
       line-height: $line-height-base;
       border: none;
