@@ -103,10 +103,13 @@
   }
 }
 
+// App Bar Nav
+// ---------------------
+
 
 // App Bar Left Nav
 // ---------------------
-.app-bar-left-nav {
+.app-bar-nav {
   float: left;
   padding-left: 10px;
   text-align: left;
@@ -128,30 +131,20 @@
   }
 }
 
-
-// App Bar Right Nav
-// ---------------------
 .app-bar-right-nav {
   float: right;
   padding-right: 10px;
   text-align: right;
-
-  //duplicative .popover
-  .popover {
-    width: 300px;
-    margin-top: -9px;
-  }
-
-  //duplicative .popover-content
-  .popover-content {
-    max-height: 350px;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    @include scroll-y();
-  }
 }
+
+
+// App Bar Button
+// ---------------------
+.app-bar-button {
+  margin-top: ($toolbar-height - $button-height)/2;
+  margin-left: 18px;
+}
+
 
 // App Actions
 // ---------------------
