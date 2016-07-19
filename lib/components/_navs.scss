@@ -21,7 +21,7 @@
       position: relative;
       display: block;
       padding-top: $nav-link-padding;
-      padding-bottom: $nav-link-padding;
+      padding-bottom: $nav-link-padding - 1;
       padding-left: 0;
       padding-right: 0;
       margin-top: 0;
@@ -148,7 +148,7 @@
     font-weight: 400;
 
     > a {
-      padding-bottom: $nav-link-padding - 2;
+      padding-bottom: $nav-link-padding - 3;
       margin-right: 2px;
       line-height: $line-height-base;
       border: none;
