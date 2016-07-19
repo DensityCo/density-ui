@@ -30,7 +30,7 @@ $brand-info:            $gray !default;
 // -------------------------
 
 $body-bg:               #fff !default;
-$text-color:            lighten($gray-darker, 25%) !default;
+$text-color:            $gray-darker !default;
 
 // Links
 // -------------------------
@@ -63,7 +63,7 @@ $line-height-computed:    floor($font-size-base * $line-height-base) !default; /
 $headings-font-family:    $font-family-base !default;
 $headings-font-weight:    400 !default;
 $headings-line-height:    1.4 !default;
-$headings-color:          $gray-darker !default;
+$headings-color:          $gray-darkest !default;
 
 
 // Components
