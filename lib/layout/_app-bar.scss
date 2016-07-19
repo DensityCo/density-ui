@@ -30,7 +30,7 @@
   height: $button-height;
   width: $button-height;
   margin-top: 10px;
-  margin-left: 18px;
+  margin-right: 18px;
   background-color: transparent;
   border-radius: 50%;
   line-height: $button-height + 4;
@@ -59,7 +59,6 @@
   z-index: $zindex-side-nav + 20;
   float: left;
   height: $app-bar-height;
-  margin-left: 18px;
   font-size: 18px;
   color: rgba($gray-dark, 0.7);
 
@@ -122,7 +121,7 @@
 
   .button {
     margin-top: ($toolbar-height - $button-height)/2;
-    margin-left: 18px;
+    margin-left: 20px;
   }
 
   .popover {
