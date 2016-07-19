@@ -24,7 +24,7 @@
   height: $button-height;
   width: $button-height;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 18px;
   background-color: transparent;
   border-radius: 50%;
   line-height: $button-height + 4;
@@ -53,7 +53,7 @@
   z-index: $zindex-side-nav + 20;
   float: left;
   height: $app-bar-height;
-  margin-left: 15px;
+  margin-left: 18px;
   font-size: 18px;
   color: rgba($gray-dark, 0.7);
 
@@ -65,7 +65,7 @@
 }
 
 .app-bar-side-nav-btn + .app-bar-brand {
-  margin-left: 10px;
+  margin-left: 18px;
 }
 
 .app-bar-title {
@@ -111,7 +111,7 @@
 // ---------------------
 .app-bar-nav {
   float: left;
-  padding-left: 10px;
+  padding-left: 18px;
   text-align: left;
 
   .button {
@@ -136,7 +136,7 @@
 
 .app-bar-nav-right {
   float: right;
-  padding-right: 10px;
+  padding-right: 18px;
   text-align: right;
 }
 
