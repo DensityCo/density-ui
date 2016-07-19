@@ -241,8 +241,11 @@ a.app-bar-app-action {
 
 @media (min-width: $screen-sm) {
   .app-bar {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 18px;
+    padding-right: 18px;
   }
+}
+
+@media (min-width: $screen-sm) {
   .app-bar-account-name { display: inline-block; }
 }
