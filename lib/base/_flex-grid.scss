@@ -15,7 +15,7 @@
  * $fg-columns will inform the grid loops how many columns there should be.
  * $fg-gutter will inform the grid loops how big eac column's gutters should be.
  */
-$fg-columns: 24 !default;
+$fg-columns: $grid-columns !default;
 $fg-gutter: 1rem !default;
 
 
@@ -38,9 +38,9 @@ $fg-gutter: 1rem !default;
  */
 $fg-breakpoints: (
   (xs),
-  (sm, 768px),
-  (md, 992px),
-  (lg, 1200px)
+  (sm, $screen-sm),
+  (md, $screen-md),
+  (lg, $screen-lg)
 ) !default;
 
 
