@@ -114,13 +114,16 @@
   padding-left: 10px;
   text-align: left;
 
-  //duplicative .popover
+  .button {
+    margin-top: ($toolbar-height - $button-height)/2;
+    margin-left: 18px;
+  }
+
   .popover {
     width: 300px;
     margin-top: -9px;
   }
 
-  //duplicative .popover-content
   .popover-content {
     max-height: 350px;
     padding-top: 0;
@@ -131,18 +134,10 @@
   }
 }
 
-.app-bar-right-nav {
+.app-bar-nav-right {
   float: right;
   padding-right: 10px;
   text-align: right;
-}
-
-
-// App Bar Button
-// ---------------------
-.app-bar-button {
-  margin-top: ($toolbar-height - $button-height)/2;
-  margin-left: 18px;
 }
 
 
