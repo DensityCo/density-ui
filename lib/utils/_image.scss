@@ -1,0 +1,13 @@
+// 
+// Images
+// -----------------------------------------
+
+// object-fit
+// ----------------------
+.object-fit-container img {
+  object-fit: cover;
+}
+.object-fit-container.compat {
+  background-size: cover;
+  background-position: center center;
+}
