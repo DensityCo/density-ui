@@ -273,9 +273,13 @@ input.radio:checked + label {
 
 // Form Group Wrapper
 // ---------------------
-.form-group {
+.input-control {
   label {
-    position: absolute;
     font-size: 10px;
+    margin-bottom: 5px;
+  }
+
+  .form-control {
+    margin-top: 0;
   }
 }

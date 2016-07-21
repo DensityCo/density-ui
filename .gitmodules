@@ -1,6 +1,0 @@
-[submodule "lib/vendor/bourbon"]
-	path = lib/vendor/bourbon
-	url = git@github.com:thoughtbot/bourbon.git
-[submodule "lib/vendor/meyer-reset"]
-	path = lib/vendor/meyer-reset
-	url = git@github.com:adamstac/meyer-reset.git

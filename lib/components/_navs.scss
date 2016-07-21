@@ -15,12 +15,19 @@
   > li {
     position: relative;
     display: block;
+    font-size: 14px;
 
     > a {
       position: relative;
       display: block;
-      padding: $nav-link-padding;
-      margin: $nav-link-margin;
+      padding-top: $nav-link-padding;
+      padding-bottom: $nav-link-padding - 1;
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: $nav-link-margin;
+      margin-right: $nav-link-margin;
       text-decoration: none;
       &:hover,
       &:focus {
@@ -30,7 +37,8 @@
     }
 
     // Disabled state sets text to gray and nukes hover/tab effects
-    &.disabled > a {
+    &.disabled > a,
+    &:disabled > a {
       color: $nav-disabled-link-color;
 
       &:hover,
@@ -138,10 +146,9 @@
     margin-bottom: 0;
     padding: 0;
     font-weight: 400;
-    // letter-spacing: 2px;
-    // text-transform: uppercase;
 
     > a {
+      padding-bottom: $nav-link-padding - 3;
       margin-right: 2px;
       line-height: $line-height-base;
       border: none;
