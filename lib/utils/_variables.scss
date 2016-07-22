@@ -213,7 +213,7 @@ $grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
 
 $nav-link-padding:                          19px !default;
 $nav-link-margin:                           30px !default;
-$nav-link-hover-bg:                         $gray-lighter !default;
+$nav-link-hover-bg:                         transparent !default;
 
 $nav-disabled-link-color:                   $gray-light !default;
 $nav-disabled-link-hover-color:             $gray-light !default;
