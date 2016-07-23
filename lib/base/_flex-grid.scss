@@ -137,7 +137,7 @@ $fg-breakpoints: (
     }
   }
 
-  @for $i from 0 through $fg-columns {
+  @for $i from 1 through $fg-columns {
 
     // Don't include the .off class for the last column
     @if ( $i != $fg-columns ) {
