@@ -270,3 +270,16 @@ input.radio:checked + label {
 		}
 	}
 }
+
+// Form fields
+//
+.form-field {
+  margin-top: 20px;
+
+  label {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+
+  .form-control { margin-top: 0; }
+}
