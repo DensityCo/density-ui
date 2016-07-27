@@ -282,5 +282,6 @@ input.radio:checked + label {
     margin-bottom: 5px;
   }
 
-  .form-control { margin-top: 0; }
+  .form-control,
+  .select { margin-top: 0; }
 }
