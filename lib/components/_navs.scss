@@ -145,7 +145,7 @@
     float: left;
     margin-bottom: 0;
     padding: 0;
-    font-weight: 400;
+    font-weight: 600;
 
     > a {
       padding-bottom: $nav-link-padding - 3;
@@ -175,7 +175,6 @@
         background-color: $nav-tabs-active-link-hover-bg;
         border: none;
         border-bottom: 2px solid $nav-tabs-active-border-color;
-        font-weight: 500;
       }
     }
   }
