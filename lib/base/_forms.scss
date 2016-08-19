@@ -271,8 +271,8 @@ input.radio:checked + label {
 	}
 }
 
-// Form fields
-//
+// Form Fields
+// ---------------------
 .form-field {
   margin-top: 20px;
 
@@ -284,4 +284,14 @@ input.radio:checked + label {
 
   .form-control,
   .select { margin-top: 0; }
+}
+
+
+// Form Actions
+// ---------------------
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
