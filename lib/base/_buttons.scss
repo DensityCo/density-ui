@@ -35,7 +35,7 @@ a.button-icon {
   padding: 0;
   height: $button-height;
   width: $button-height;
-  line-height: $button-height + 5;
+  line-height: $button-height - 6;
 
   & + .button-icon { margin-left: 10px; }
 }
