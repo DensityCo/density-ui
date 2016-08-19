@@ -1,4 +1,9 @@
+//
+// General Overlay Behaviot TO-DO: Add to Density UI
+// ------------------------------------------
+
 .overlay {
+  display: none;
   position: fixed;
   z-index: -1;
   top: 0;
@@ -22,10 +27,7 @@
 .overlay-toolbar {
   justify-content: center;
 
-  .button {
-    align-self: center;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
-  }
+  .button { align-self: center; }
 }
 
 .overlay-body {
@@ -33,6 +35,24 @@
   padding-left: 20px;
   padding-right: 20px;
   height: calc(100% - 56px);
+}
+
+
+.overlay-container {
+  box-sizing: border-box;
+  position: relative;
+  top: 150%;
+  max-width: 540px;
+  margin: 0 auto;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: $border-radius-base;
+  @include transition(top 200ms ease-in-out);
+
+  &.open {
+    top: 100px;
+    @include transition(top 200ms ease-in-out 100ms);
+  }
 }
 
 .overlay-video-container {
