@@ -150,6 +150,7 @@
     font-weight: 600;
 
     > a {
+      padding-top: $nav-link-padding;
       padding-bottom: $nav-link-padding - 3;
       margin-right: 2px;
       line-height: $line-height-base;
