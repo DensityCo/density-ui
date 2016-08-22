@@ -20,8 +20,8 @@
     > a {
       position: relative;
       display: block;
-      padding-top: $nav-link-padding;
-      padding-bottom: $nav-link-padding - 1;
+      padding-top: 2px;
+      padding-bottom: 2px;
       padding-left: 0;
       padding-right: 0;
       margin-top: 0;
@@ -29,6 +29,8 @@
       margin-left: $nav-link-margin;
       margin-right: $nav-link-margin;
       text-decoration: none;
+      color: $text-color;
+
       &:hover,
       &:focus {
         text-decoration: none;
