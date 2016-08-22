@@ -71,9 +71,9 @@ textarea {
   select {
     display: inline-block;
     width: 100%;
-    height: 44px;
+    height: 47px;
     margin: 0;
-    padding: 0 0 15px 0;
+    padding: 3px 0 3px 0;
     background-color: transparent;
     border: 0;
     border-bottom: 1px solid $gray;
@@ -91,7 +91,7 @@ textarea {
 
   &:after {
     position: absolute;
-    top: 30%;
+    top: 45%;
     right: 0;
     display: inline-block;
     content: "";
