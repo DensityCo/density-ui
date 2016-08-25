@@ -18,7 +18,7 @@
   );
 
   &.open {
-    z-index: 999999;
+    z-index: $zindex-modal + 5;
     background-color: rgba(255,255,255,0.96);
     @include transition(background-color 300ms ease-in-out);
   }
