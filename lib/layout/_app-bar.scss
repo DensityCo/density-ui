@@ -16,6 +16,7 @@
   .nav { float: left; }
 
   &.shadow { box-shadow: 0 4px 24px rgba(0,0,0,0.05); }
+  &.fixed { position: fixed; }
 }
 
 .app-bar-inner {
