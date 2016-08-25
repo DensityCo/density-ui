@@ -12,14 +12,12 @@
   right: 0;
   @include scroll-y();
   background-color: rgba(255,255,255,0.0);
-  @include transition(
-    background-color 200ms ease-in-out,
-    z-index 0s ease 300ms
-  );
+  @include transition(background-color 200ms ease-in-out);
 
   &.open {
     z-index: $zindex-modal;
-    background-color: rgba(255,255,255,0.96);
+    display: block;
+    background-color: white;
     @include transition(background-color 300ms ease-in-out);
   }
 }
