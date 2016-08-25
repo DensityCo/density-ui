@@ -33,8 +33,13 @@ a.button-icon {
   height: $button-height;
   width: $button-height;
   line-height: $button-height - 6;
+  text-align: center;
 
   & + .button-icon { margin-left: 10px; }
+}
+
+a.button-icon {
+  line-height: $button-height;
 }
 
 .button-default,
@@ -71,4 +76,8 @@ a.button-link {
   padding: 0;
 
   &:hover { background-color: transparent; }
+}
+
+.button-loading {
+  height: 22px;
 }
