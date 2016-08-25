@@ -9,6 +9,7 @@
   padding-left: 18px;
   padding-right: 18px;
   height: $app-bar-height;
+  width: 100%;
   background-color: $app-bar-bg;
   border-bottom: 1px solid $gray-lighter;
   @include transition(box-shadow 200ms ease-in-out);
@@ -18,6 +19,8 @@
   &.shadow { box-shadow: 0 4px 24px rgba(0,0,0,0.05); }
   &.fixed { position: fixed; }
 }
+
+body.app-bar-fixed { padding-top: $navbar-height; }
 
 .app-bar-inner {
   height: $app-bar-height;
