@@ -157,7 +157,8 @@ $zindex-tooltip:           1030 !default;
 $zindex-navbar-fixed:      1030 !default;
 $zindex-modal-background:  1040 !default;
 $zindex-modal:             1050 !default;
-$zindex-side-nav:          1060;
+$zindex-side-nav:          1060 !default;
+$zindex-toasts:            1070 !default;
 
 // Media queries breakpoints
 // --------------------------------------------------

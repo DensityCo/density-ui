@@ -44,8 +44,11 @@
   top: 150%;
   max-width: 540px;
   margin: 0 auto;
+  // background-color: #fff;
   overflow: hidden;
+  // border: 1px solid $gray;
   border-radius: $border-radius-base;
+  // box-shadow: 0 0 20px 12px rgba(0,0,0,0.03);
   @include transition(top 200ms ease-in-out);
 
   &.open {
