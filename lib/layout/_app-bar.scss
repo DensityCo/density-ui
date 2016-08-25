@@ -20,7 +20,7 @@
   &.fixed { position: fixed; }
 }
 
-body.app-bar-fixed { padding-top: $navbar-height; }
+body.app-bar-fixed { padding-top: $app-bar-height; }
 
 .app-bar-inner {
   height: $app-bar-height;
