@@ -3,6 +3,13 @@
 // -----------------------------------------
 
 .table {
+  width: 100%;
+
+  // Table Headers
+  thead tr td {
+    font-weight: bold;
+  }
+
   // Cells
   > thead,
   > tbody,
@@ -94,5 +101,16 @@
   // Nesting
   .table {
     background-color: $body-bg;
+  }
+}
+.table.striped {
+  td {
+    border: none; 
+  }
+  tbody > tr:nth-of-type(even) {
+    background-color: #FBFBFB;
+  }
+  thead+tbody > tr:nth-of-type(odd) {
+    background-color: #FBFBFB;
   }
 }
