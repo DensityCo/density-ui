@@ -8,9 +8,9 @@
   border-radius: $border-radius-base;
   overflow: hidden;
   border: none;
-  -webkit-box-shadow: 0px 1px 8px rgba(34,42,46,.12);
-  -moz-box-shadow: 0px 1px 8px rgba(34,42,46,.12);
-  box-shadow: 0px 1px 8px rgba(34,42,46,.12);
+  -webkit-box-shadow: 0px 1px 6px rgba(34,42,46,.16);
+  -moz-box-shadow: 0px 1px 6px rgba(34,42,46,.16);
+  box-shadow: 0px 1px 6px rgba(34,42,46,.16);
 }
 
 .card + .card { margin-top: 30px; }
