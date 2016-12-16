@@ -107,11 +107,10 @@
   td {
     border: none; 
   }
-  :not(thead)+tbody > tr:nth-of-type(even) {
+  tbody > tr:nth-of-type(odd) {
     background-color: #FBFBFB;
   }
   thead+tbody > tr:nth-of-type(odd) {
     background-color: #FBFBFB;
   }
 }
-
