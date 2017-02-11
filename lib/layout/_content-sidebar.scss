@@ -46,7 +46,7 @@
     vertical-align: middle;
     color: $gray;
     text-decoration: none;
-    @include transition(color 200ms ease-in-out);
+    //@include transition(color 200ms ease-in-out);
 
     i {
       vertical-align: middle;

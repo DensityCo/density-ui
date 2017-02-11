@@ -46,7 +46,7 @@ textarea {
   border: none;
   border-bottom: 1px solid $gray;
   background-color: transparent;
-  @include transition(all 100ms ease-in-out);
+  //@include transition(all 100ms ease-in-out);
 
   &:focus,
   &:active {
@@ -234,7 +234,7 @@ input.radio:checked + label {
     user-select: none;
     background: $gray;
 		border-radius: 18px;
-		@include transition(all 200ms ease);
+		//@include transition(all 200ms ease);
 
 		&:after, &:before{
 			position: relative;
@@ -251,7 +251,7 @@ input.radio:checked + label {
       border-radius: 50%;
 			background: #fff;
       border: 2px solid $gray;
-			@include transition(all 200ms ease);
+//			@include transition(all 200ms ease);
 		}
 
 		&:before{

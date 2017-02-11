@@ -12,13 +12,13 @@
   right: 0;
   @include scroll-y();
   background-color: rgba(255,255,255,0.0);
-  @include transition(background-color 200ms ease-in-out);
+  //@include transition(background-color 200ms ease-in-out);
 
   &.open {
     z-index: $zindex-modal;
     display: block;
     background-color: white;
-    @include transition(background-color 300ms ease-in-out);
+//    @include transition(background-color 300ms ease-in-out);
   }
 }
 
@@ -47,11 +47,11 @@
   // border: 1px solid $gray;
   border-radius: $border-radius-base;
   // box-shadow: 0 0 20px 12px rgba(0,0,0,0.03);
-  @include transition(top 200ms ease-in-out);
+ // @include transition(top 200ms ease-in-out);
 
   &.open {
     top: 10px;
-    @include transition(top 200ms ease-in-out 100ms);
+  //  @include transition(top 200ms ease-in-out 100ms);
   }
 }
 
@@ -67,7 +67,7 @@
   box-shadow: 0 10px 40px rgba(0,0,0,0.35);
   overflow: hidden;
   border-radius: $border-radius-base;
-  @include transition(top 200ms ease-in-out);
+//  @include transition(top 200ms ease-in-out);
 
   iframe {
     position: absolute;
@@ -80,7 +80,7 @@
 
   &.open {
     top: calc(50% - 28px);
-    @include transition(top 200ms ease-in-out 100ms);
+ //   @include transition(top 200ms ease-in-out 100ms);
   }
 }
 

@@ -12,11 +12,11 @@ a.button {
   font-family: $font-family-base;
   font-size: 15px;
   font-weight: 600;
-  @include transition(all 200ms ease-in-out);
+//  @include transition(all 200ms ease-in-out);
 
   &:hover {
     background-color: rgba($gray-dark, 0.1);
-    @include transition(all 400ms ease-in-out);
+    //@include transition(all 400ms ease-in-out);
   }
 
   &[disabled] {
