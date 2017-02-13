@@ -13,14 +13,14 @@
   background: rgba(#fff, 0.98);
   // border-right: 1px solid rgba($gray-dark,0.2);
   color: #fff;
-  //@include transition(
-//    left 150ms ease-in-out,
-//    box-shadow 200ms ease-in-out
- // );
+  @include transition(
+    left 150ms ease-in-out,
+    box-shadow 200ms ease-in-out
+  );
 
   &.open {
     left: 0;
-  //  @include transition(left 200ms ease-in-out);
+    @include transition(left 200ms ease-in-out);
     box-shadow: 4px 0 60px rgba(0,0,0,0.1);
   }
 }
@@ -80,7 +80,7 @@
     vertical-align: middle;
     color: $gray;
     text-decoration: none;
-   // @include transition(color 200ms ease-in-out);
+    @include transition(color 200ms ease-in-out);
 
     i {
       vertical-align: middle;

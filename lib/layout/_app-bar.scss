@@ -12,7 +12,7 @@
   width: 100%;
   background-color: $app-bar-bg;
   border-bottom: 1px solid $gray-lighter;
-//  @include transition(box-shadow 200ms ease-in-out);
+  @include transition(box-shadow 200ms ease-in-out);
 
   .nav { float: left; }
 
@@ -44,7 +44,7 @@
   font-size: 22px;
   font-family: $font-family-base;
   overflow: hidden;
- // @include transition(all 100ms ease-in);
+  @include transition(all 100ms ease-in);
 
   i {
     line-height: inherit;
@@ -55,7 +55,7 @@
   &:hover {
     color: $app-bar-color-highlight;
     background-color: rgba($gray-dark, 0.1);
-  //  @include transition(all 200ms ease-in);
+    @include transition(all 200ms ease-in);
   }
 }
 
@@ -163,7 +163,7 @@ a.app-bar-app-action {
   margin-left: 20px;
   font-size: 16px;
   color: $app-bar-color;
-//  @include transition(color 200ms ease-in-out);
+  @include transition(color 200ms ease-in-out);
 
   &:hover { color: $app-bar-color-highlight; }
 }
@@ -206,7 +206,7 @@ a.app-bar-app-action {
   color: $app-bar-color;
   font-size: $font-size-base;
   font-family: $font-family-base;
-//  @include transition(color 200ms ease-in-out);
+  @include transition(color 200ms ease-in-out);
 
   &:hover {
     color: $app-bar-color-highlight;
@@ -225,7 +225,7 @@ a.app-bar-app-action {
   border-radius: 50%;
   line-height: 40px;
   overflow: hidden;
- // @include transition(border-color 200ms ease-in-out);
+  @include transition(border-color 200ms ease-in-out);
 
   i { line-height: inherit; }
 }

@@ -34,10 +34,10 @@
     color: rgba($gray-darker, 0.5);
     line-height: $button-height + 10;
     text-align: center;
-    //@include transition(
-//      background-color 200ms ease-in-out,
-//      color 200ms ease-in-out
-//    );
+    @include transition(
+      background-color 200ms ease-in-out,
+      color 200ms ease-in-out
+    );
 
     i { margin-right: 0; }
 
@@ -68,8 +68,8 @@
   display: block;
   height: 150px;
   opacity: 0.9;
-  //@include linear-gradient($gold, transparent);
-//  background-color: transparent;
+  @include linear-gradient($gold, transparent);
+  background-color: transparent;
 }
 
 .card-header-title {
