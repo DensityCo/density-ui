@@ -1,19 +1,23 @@
+//
+// General Overlay Behaviot TO-DO: Add to Density UI
+// ------------------------------------------
+
 .overlay {
+  display: none;
   position: fixed;
   z-index: -1;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  @include scroll-y();
   background-color: rgba(255,255,255,0.0);
-  @include transition(
-    background-color 200ms ease-in-out,
-    z-index 0s ease 300ms
-  );
+  @include transition(background-color 200ms ease-in-out);
 
   &.open {
-    z-index: 999999;
-    background-color: rgba(255,255,255,0.96);
+    z-index: $zindex-modal;
+    display: block;
+    background-color: white;
     @include transition(background-color 300ms ease-in-out);
   }
 }
@@ -21,9 +25,7 @@
 .overlay-toolbar {
   justify-content: center;
 
-  .button {
-    align-self: center;
-  }
+  .button { align-self: center; }
 }
 
 .overlay-body {
@@ -31,6 +33,26 @@
   padding-left: 20px;
   padding-right: 20px;
   height: calc(100% - 56px);
+}
+
+
+.overlay-container {
+  box-sizing: border-box;
+  position: relative;
+  top: 150%;
+  max-width: 540px;
+  margin: 0 auto;
+  // background-color: #fff;
+  overflow: hidden;
+  // border: 1px solid $gray;
+  border-radius: $border-radius-base;
+  // box-shadow: 0 0 20px 12px rgba(0,0,0,0.03);
+  @include transition(top 200ms ease-in-out);
+
+  &.open {
+    top: 10px;
+    @include transition(top 200ms ease-in-out 100ms);
+  }
 }
 
 .overlay-video-container {
@@ -68,5 +90,11 @@
     height: 576px;
     width: 1024px;
     padding-bottom: 0;
+  }
+}
+
+@media (min-width: $screen-sm) {
+  .overlay-container {
+    &.open { top: 100px; }
   }
 }

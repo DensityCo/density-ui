@@ -20,8 +20,8 @@
     > a {
       position: relative;
       display: block;
-      padding-top: $nav-link-padding;
-      padding-bottom: $nav-link-padding - 1;
+      padding-top: 2px;
+      padding-bottom: 2px;
       padding-left: 0;
       padding-right: 0;
       margin-top: 0;
@@ -29,6 +29,8 @@
       margin-left: $nav-link-margin;
       margin-right: $nav-link-margin;
       text-decoration: none;
+      color: $text-color;
+
       &:hover,
       &:focus {
         text-decoration: none;
@@ -145,9 +147,10 @@
     float: left;
     margin-bottom: 0;
     padding: 0;
-    font-weight: 400;
+    font-weight: 600;
 
     > a {
+      padding-top: $nav-link-padding;
       padding-bottom: $nav-link-padding - 3;
       margin-right: 2px;
       line-height: $line-height-base;
@@ -175,7 +178,6 @@
         background-color: $nav-tabs-active-link-hover-bg;
         border: none;
         border-bottom: 2px solid $nav-tabs-active-border-color;
-        font-weight: 500;
       }
     }
   }

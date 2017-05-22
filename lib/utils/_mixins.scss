@@ -124,3 +124,19 @@
   width: 100%;
   object-fit: cover;
 }
+
+@mixin gradient-linear($start, $finish) {
+  background: $start; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient($start, $finish); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient($start, $finish); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($start, $finish); /* For Firefox 3.6 to 15 */
+  background: linear-gradient($start, $finish); /* Standard syntax */
+}
+
+@mixin gradient-radial($start, $finish) {
+  background: $start; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient($start, $finish); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient($start, $finish); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient($start, $finish); /* For Firefox 3.6 to 15 */
+  background: radial-gradient($start, $finish); /* Standard syntax */
+}

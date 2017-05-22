@@ -4,11 +4,12 @@
 
 .app-bar {
   position: relative;
-  z-index: 4000;
+  z-index: 1030;
   box-sizing: border-box;
   padding-left: 18px;
   padding-right: 18px;
   height: $app-bar-height;
+  width: 100%;
   background-color: $app-bar-bg;
   border-bottom: 1px solid $gray-lighter;
   @include transition(box-shadow 200ms ease-in-out);
@@ -16,7 +17,10 @@
   .nav { float: left; }
 
   &.shadow { box-shadow: 0 4px 24px rgba(0,0,0,0.05); }
+  &.fixed { position: fixed; }
 }
+
+.content-section.app-bar-fixed { padding-top: $app-bar-height; }
 
 .app-bar-inner {
   height: $app-bar-height;
@@ -69,10 +73,6 @@
     top: 52%;
     height: 20px;
   }
-}
-
-.app-bar-side-nav-btn + .app-bar-brand {
-  margin-left: 18px;
 }
 
 .app-bar-title {

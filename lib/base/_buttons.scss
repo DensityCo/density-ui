@@ -11,11 +11,8 @@ a.button {
   text-decoration: none;
   font-family: $font-family-base;
   font-size: 15px;
-  font-weight: 500;
-  @include transition(
-    background 200ms ease-in-out,
-    color 200ms ease-in-out
-  );
+  font-weight: 600;
+  @include transition(all 100ms ease-in-out);
 
   &:hover {
     background-color: rgba($gray-dark, 0.1);
@@ -35,9 +32,14 @@ a.button-icon {
   padding: 0;
   height: $button-height;
   width: $button-height;
-  line-height: $button-height + 5;
+  line-height: $button-height - 6;
+  text-align: center;
 
   & + .button-icon { margin-left: 10px; }
+}
+
+a.button-icon {
+  line-height: $button-height;
 }
 
 .button-default,
@@ -67,4 +69,16 @@ a.button-success {
 .button-danger,
 a.button-danger {
   @include button-style($brand-danger);
+}
+
+.button-link,
+a.button-link {
+  padding: 0;
+
+  &:hover { background-color: transparent; }
+}
+
+.button-loading {
+  height: 22px;
+  display: block;
 }
